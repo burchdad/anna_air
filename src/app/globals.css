@@ -13,6 +13,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-body), sans-serif;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.08);
 }
 
 h1,
@@ -27,4 +28,23 @@ h6 {
 ::selection {
   background: #fecdd3;
   color: #4c0519;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+summary {
+  transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #ec4899;
+  outline-offset: 2px;
 }

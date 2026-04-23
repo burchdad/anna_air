@@ -41,9 +41,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${displayFont.variable} ${bodyFont.variable} h-full antialiased`}>
       <body className="min-h-full bg-[var(--background)] text-[var(--foreground)]">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:font-semibold focus:text-slate-900 focus:shadow-lg"
+        >
+          Skip to main content
+        </a>
         <div className="relative flex min-h-screen flex-col">
           <Header />
-          <main className="flex-1 pb-32 md:pb-0">{children}</main>
+          <main id="main-content" className="flex-1 pb-32 md:pb-0">
+            {children}
+          </main>
           <Footer />
           <StickyMobileCta />
         </div>

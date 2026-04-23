@@ -20,6 +20,20 @@ export function Header() {
     };
   }, [isMenuOpen]);
 
+  useEffect(() => {
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setIsMenuOpen(false);
+      }
+    }
+
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, []);
+
   const mobileLinks = [
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
@@ -72,6 +86,8 @@ export function Header() {
             onClick={() => setIsMenuOpen(true)}
             className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-pink-200 bg-white text-pink-700 md:hidden"
             aria-label="Open menu"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-nav-drawer"
           >
             <Menu size={20} />
           </button>
@@ -91,6 +107,7 @@ export function Header() {
               exit={{ opacity: 0 }}
             />
             <motion.aside
+              id="mobile-nav-drawer"
               className="fixed right-0 top-0 z-[70] h-dvh w-[85%] max-w-sm border-l border-pink-100 bg-white p-6 shadow-2xl md:hidden"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}

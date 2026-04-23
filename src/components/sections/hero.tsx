@@ -15,7 +15,7 @@ export function Hero() {
             {siteContent.business.stateRegion} Heating and Cooling
           </p>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
             {siteContent.heroProof.map((item) => (
               <span
                 key={item}
@@ -30,11 +30,11 @@ export function Hero() {
             {siteContent.hero.headline}
           </h1>
 
-          <p className="max-w-2xl text-pretty text-base leading-relaxed text-slate-700 sm:text-lg">
+          <p className="mx-auto max-w-2xl text-pretty text-base leading-relaxed text-slate-700 sm:text-lg lg:mx-0">
             {siteContent.hero.subheadline}
           </p>
 
-          <p className="max-w-2xl text-pretty text-sm leading-relaxed text-slate-600 sm:text-base">
+          <p className="mx-auto max-w-2xl text-pretty text-sm leading-relaxed text-slate-600 sm:text-base lg:mx-0">
             {siteContent.hero.supportCopy}
           </p>
 
@@ -70,7 +70,7 @@ export function Hero() {
             </a>
           </div>
 
-          <p className="mt-1 text-sm text-slate-500">
+          <p className="mt-1 text-sm leading-relaxed text-slate-500">
             {siteContent.business.licenseNumber} • {siteContent.business.insuredStatus} •{" "}
             {siteContent.business.emergencyLabel}
           </p>
