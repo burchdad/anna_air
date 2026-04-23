@@ -15,8 +15,8 @@ import { LocalBusinessSchema } from "@/components/seo/local-business-schema";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata(
-  "Anna's Air | Heating and Cooling Service in Texas",
-  "Fast, honest HVAC service from a female-owned, veteran-owned local company focused on comfort, clear communication, and responsive support.",
+  "Anna's Air | San Antonio HVAC Service",
+  "Fast, honest HVAC service for San Antonio and Hill Country homeowners from a female-owned, veteran-owned company focused on emergency response and clear communication.",
   "/",
 );
 

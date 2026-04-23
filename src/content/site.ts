@@ -26,6 +26,8 @@ export const siteContent = {
     domain: "annasair.com",
     phoneDisplay: "210-895-1122",
     phoneHref: "tel:+12108951122",
+    bookingHref: "/contact",
+    bookingLabel: "Book Service",
     email: "Annahoward60@gmail.com",
     licenseNumber: "TACLB155020E",
     insuredStatus: "Fully Insured",
@@ -41,10 +43,10 @@ export const siteContent = {
       "When possible, Anna's Air works hard to restore cooling the same day because Texas heat does not wait.",
   },
   seo: {
-    defaultTitle: "Anna's Air | Heating and Cooling Service in Texas",
+    defaultTitle: "Anna's Air | San Antonio HVAC Service",
     titleTemplate: "%s | Anna's Air",
     defaultDescription:
-      "Anna's Air delivers honest, responsive heating and cooling service in San Antonio and surrounding Hill Country with veteran-owned, female-operated leadership and same-day urgency.",
+      "Anna's Air delivers fast, honest HVAC service across San Antonio and the Hill Country with veteran-owned, female-operated leadership, same-day urgency, and emergency support.",
     ogImage: "/images/og-annas-air.svg",
   },
   navigation: [
@@ -63,6 +65,11 @@ export const siteContent = {
       "Your family shouldn't suffer in the heat. We do whatever it takes to get you cooling again the same day.",
     primaryCta: "Call Now — 210-895-1122",
     secondaryCta: "Book Service",
+    urgencyChecks: [
+      "No cool air or weak airflow",
+      "System not turning on",
+      "Home getting hotter by the hour",
+    ],
   },
   trustBarItems: [
     "Female-Owned & Operated",
@@ -85,37 +92,37 @@ export const siteContent = {
     {
       title: "AC Repair",
       description:
-        "Fast diagnostics and practical repairs for cooling systems that stop keeping up.",
+        "No cool air, weak airflow, or a system that cannot keep up? Get fast diagnostics and practical repairs.",
       slug: "ac-repair",
     },
     {
       title: "Heating Repair",
       description:
-        "Dependable heating service to restore warmth, safety, and system confidence.",
+        "Restore heat quickly with dependable service when your system stops warming your home safely.",
       slug: "heating-repair",
     },
     {
       title: "System Check and Maintenance",
       description:
-        "Routine performance checks to reduce surprise breakdowns and protect comfort.",
+        "Seasonal checkups help prevent surprise breakdowns and keep your system ready when weather turns extreme.",
       slug: "system-check-maintenance",
     },
     {
       title: "Complete Installation",
       description:
-        "Thoughtful system design and replacement planning for efficient long-term comfort.",
+        "Replace outdated equipment with a right-fit system planned for reliable, efficient long-term comfort.",
       slug: "complete-installation",
     },
     {
       title: "Emergency HVAC Service",
       description:
-        "Urgent support when your system fails and conditions become unsafe or uncomfortable.",
+        "Urgent support for no-cooling and no-heat situations when waiting is not an option.",
       slug: "emergency-hvac-service",
     },
     {
       title: "Ductwork and Airflow Performance",
       description:
-        "Airflow balancing and duct improvements to help each room cool and heat more evenly.",
+        "Fix hot rooms, weak vents, and uneven comfort with ductwork improvements and airflow balancing.",
       slug: "ductwork-airflow-performance",
     },
   ] as ServiceItem[],

@@ -32,6 +32,16 @@ export function TestimonialsSection() {
         </div>
       </Reveal>
 
+      <div className="mt-8 grid gap-3 sm:grid-cols-3">
+        {siteContent.testimonialHighlights.map((item, index) => (
+          <Reveal key={item} delay={index * 0.05}>
+            <div className="rounded-2xl border border-pink-100 bg-pink-50/70 px-5 py-4 text-sm font-semibold text-slate-800">
+              {item}
+            </div>
+          </Reveal>
+        ))}
+      </div>
+
       <div className="mt-8 grid gap-4 md:grid-cols-2">
         {siteContent.testimonials.map((testimonial, index) => (
           <Reveal key={testimonial.context} delay={index * 0.08}>

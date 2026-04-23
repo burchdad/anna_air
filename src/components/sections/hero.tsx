@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { AlertCircle, Sparkles } from "lucide-react";
+import { AlertCircle, PhoneCall, Sparkles } from "lucide-react";
 
 import { siteContent } from "@/content/site";
 
@@ -43,6 +43,17 @@ export function Hero() {
             Emergency service available for urgent no-cooling and no-heat calls
           </p>
 
+          <div className="grid gap-2 sm:grid-cols-3">
+            {siteContent.hero.urgencyChecks.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl border border-pink-200 bg-white/85 px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
               href={siteContent.business.phoneHref}
@@ -65,29 +76,80 @@ export function Hero() {
         </div>
 
         <div className="space-y-5">
-          <div className="overflow-hidden rounded-3xl border-2 border-pink-200 shadow-[0_24px_60px_rgba(236,72,153,0.18)]">
-            <Image
-              src="/images/door-hanger-front.jpg"
-              alt="Anna's Air Heating and Cooling — She Believed She Could So She Did"
-              width={420}
-              height={560}
-              className="w-full object-cover"
-              priority
-            />
-          </div>
-
-          <div className="rounded-3xl border-2 border-pink-200 bg-gradient-to-br from-white to-pink-50 p-5">
-            <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-pink-700">
-              <Sparkles size={14} />
-              Real Customer Outcomes
+          <div className="rounded-[2rem] border-2 border-pink-200 bg-[linear-gradient(145deg,rgba(255,255,255,0.98),rgba(253,242,248,0.95))] p-5 shadow-[0_24px_60px_rgba(236,72,153,0.18)]">
+            <div className="flex flex-wrap items-start justify-between gap-3 rounded-3xl bg-gradient-to-r from-pink-600 to-pink-500 p-5 text-white">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/80">
+                  Emergency Response
+                </p>
+                <p className="mt-2 max-w-xs text-2xl font-semibold leading-tight">
+                  Cooling restored fast when comfort cannot wait.
+                </p>
+              </div>
+              <a
+                href={siteContent.business.phoneHref}
+                className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-pink-600 transition hover:bg-pink-50"
+              >
+                <PhoneCall size={16} />
+                Call Anna now
+              </a>
             </div>
-            <ul className="mt-3 space-y-1.5 text-sm text-slate-700">
-              {siteContent.testimonialHighlights.map((item) => (
-                <li key={item} className="flex items-center gap-2">
-                  <span className="text-pink-500">✓</span> {item}
-                </li>
-              ))}
-            </ul>
+
+            <div className="mt-4 grid gap-4 md:grid-cols-[0.82fr_1.18fr]">
+              <div className="overflow-hidden rounded-3xl border border-pink-200 bg-white">
+                <Image
+                  src="/images/door-hanger-back.jpg"
+                  alt="Anna's Air LLC — Company owned and operated by a female veteran"
+                  width={360}
+                  height={560}
+                  className="h-full w-full object-cover"
+                  priority
+                />
+              </div>
+
+              <div className="space-y-4">
+                <div className="rounded-3xl border border-pink-200 bg-white p-5 shadow-sm">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-pink-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-pink-700">
+                    <Sparkles size={14} />
+                    Fast Response Proof
+                  </div>
+                  <p className="mt-4 text-lg font-semibold leading-snug text-slate-900">
+                    “Anna got here in about 30 minutes and had us cooling again in around 15 minutes.”
+                  </p>
+                  <p className="mt-2 text-sm text-slate-600">
+                    Emergency cooling service for a local family with a newborn at home.
+                  </p>
+                  <div className="mt-4 grid grid-cols-2 gap-3">
+                    <div className="rounded-2xl bg-pink-50 px-4 py-3">
+                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-pink-600">
+                        Arrival
+                      </p>
+                      <p className="mt-1 text-xl font-bold text-slate-950">30 min</p>
+                    </div>
+                    <div className="rounded-2xl bg-pink-50 px-4 py-3">
+                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-pink-600">
+                        Cooling Back
+                      </p>
+                      <p className="mt-1 text-xl font-bold text-slate-950">15 min</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="rounded-3xl border border-pink-200 bg-gradient-to-r from-pink-50 to-white p-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-pink-600">
+                    Why homeowners call now
+                  </p>
+                  <ul className="mt-3 space-y-2 text-sm font-medium text-slate-800">
+                    {siteContent.testimonialHighlights.map((item) => (
+                      <li key={item} className="flex items-start gap-2">
+                        <span className="mt-0.5 text-pink-500">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

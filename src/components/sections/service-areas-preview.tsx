@@ -8,15 +8,15 @@ import { siteContent } from "@/content/site";
 
 export function ServiceAreasPreview() {
   return (
-    <SectionShell className="bg-slate-50/70">
+    <SectionShell className="bg-pink-50/40">
       <Reveal>
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-rose-600">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-pink-600">
               Service Area
             </p>
             <h2 className="mt-2 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
-              Local HVAC support across North Texas
+              Local HVAC support across San Antonio and the Hill Country
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">
               {siteContent.serviceAreas.intro}
@@ -24,7 +24,7 @@ export function ServiceAreasPreview() {
           </div>
           <Link
             href="/service-areas"
-            className="inline-flex rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-rose-300 hover:text-rose-700"
+            className="inline-flex rounded-full border border-pink-300 bg-white px-4 py-2 text-sm font-semibold text-pink-700 transition hover:border-pink-400 hover:bg-pink-50"
           >
             View service areas
           </Link>
@@ -34,8 +34,8 @@ export function ServiceAreasPreview() {
       <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {siteContent.serviceAreas.primaryAreas.map((city, index) => (
           <Reveal key={city} delay={index * 0.04}>
-            <div className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-800">
-              <MapPin size={16} className="text-rose-600" />
+            <div className="inline-flex items-center gap-2 rounded-xl border border-pink-200 bg-white px-4 py-3 text-sm font-medium text-slate-800 shadow-sm">
+              <MapPin size={16} className="text-pink-600" />
               {city}
             </div>
           </Reveal>
