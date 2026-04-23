@@ -63,7 +63,7 @@ export const siteContent = {
       "Veteran-owned and operated. Licensed and insured. We show up when it matters.",
     supportCopy:
       "Your family shouldn't suffer in the heat. We do whatever it takes to get you cooling again the same day.",
-    primaryCta: "Call Now — 210-895-1122",
+    primaryCta: "Call Now",
     secondaryCta: "Book Service",
     urgencyChecks: [
       "No cool air or weak airflow",

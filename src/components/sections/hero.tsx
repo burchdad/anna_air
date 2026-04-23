@@ -6,11 +6,11 @@ import { siteContent } from "@/content/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-4 pb-10 pt-8 sm:px-6 sm:pb-14 sm:pt-12 lg:px-8 lg:pb-20 lg:pt-16">
+    <section className="relative overflow-hidden px-4 pb-8 pt-6 sm:px-6 sm:pb-12 sm:pt-10 md:px-12 md:pb-16 md:pt-14">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_18%,rgba(236,72,153,0.25),transparent_40%),radial-gradient(circle_at_82%_12%,rgba(236,72,153,0.2),transparent_38%),linear-gradient(to_bottom,#fff,#fef2f6)]" />
 
-      <div className="mx-auto grid w-full max-w-6xl gap-7 sm:gap-10 lg:grid-cols-[1.12fr_0.88fr] lg:items-center">
-        <div className="space-y-5 sm:space-y-7">
+      <div className="mx-auto grid w-full max-w-7xl gap-6 sm:gap-8 lg:grid-cols-[1.12fr_0.88fr] lg:items-center">
+        <div className="space-y-5 text-center lg:text-left">
           <p className="inline-flex rounded-full border border-pink-200 bg-white/90 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-pink-700 shadow-sm">
             {siteContent.business.stateRegion} Heating and Cooling
           </p>
@@ -26,7 +26,7 @@ export function Hero() {
             ))}
           </div>
 
-          <h1 className="text-balance text-3xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+          <h1 className="text-balance text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl md:text-5xl">
             {siteContent.hero.headline}
           </h1>
 
@@ -43,7 +43,7 @@ export function Hero() {
             Emergency service available for urgent no-cooling and no-heat calls
           </p>
 
-          <div className="grid gap-2 sm:grid-cols-3">
+          <div className="hidden gap-2 sm:grid sm:grid-cols-3">
             {siteContent.hero.urgencyChecks.map((item) => (
               <div
                 key={item}
@@ -54,19 +54,19 @@ export function Hero() {
             ))}
           </div>
 
-          <div className="flex flex-col gap-3 sm:flex-row">
+          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
             <a
               href={siteContent.business.phoneHref}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-pink-600 to-pink-500 px-4 py-3 text-sm font-bold text-white transition hover:from-pink-700 hover:to-pink-600 shadow-lg hover:shadow-xl active:scale-95 sm:w-auto sm:px-6 sm:py-4 sm:text-base"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-pink-600 px-4 py-3 text-sm font-bold text-white transition hover:bg-pink-700 shadow-lg hover:shadow-xl active:scale-95 sm:w-auto sm:px-6 sm:py-4 sm:text-base"
             >
               <AlertCircle size={18} />
-              {siteContent.hero.primaryCta}
+              Call Now
             </a>
             <a
               href="/contact"
               className="inline-flex w-full items-center justify-center rounded-full border-2 border-pink-300 bg-white px-4 py-3 text-sm font-semibold text-pink-700 transition hover:border-pink-400 hover:bg-pink-50 active:scale-95 sm:w-auto sm:px-6 sm:py-4 sm:text-base"
             >
-              {siteContent.hero.secondaryCta}
+              Book Service
             </a>
           </div>
 

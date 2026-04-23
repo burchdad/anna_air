@@ -8,14 +8,14 @@ import { siteContent } from "@/content/site";
 
 export function ServiceAreasPreview() {
   return (
-    <SectionShell className="bg-pink-50/40">
+    <SectionShell className="bg-white">
       <Reveal>
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-pink-600">
               Service Area
             </p>
-            <h2 className="mt-2 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl md:text-4xl">
               Local HVAC support across San Antonio and the Hill Country
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">
@@ -34,7 +34,7 @@ export function ServiceAreasPreview() {
       <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {siteContent.serviceAreas.primaryAreas.map((city, index) => (
           <Reveal key={city} delay={index * 0.04}>
-            <div className="inline-flex items-center gap-2 rounded-xl border border-pink-200 bg-white px-4 py-3 text-sm font-medium text-slate-800 shadow-sm">
+            <div className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-800 shadow-sm">
               <MapPin size={16} className="text-pink-600" />
               {city}
             </div>

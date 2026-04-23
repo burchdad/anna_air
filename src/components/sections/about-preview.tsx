@@ -7,14 +7,14 @@ import { siteContent } from "@/content/site";
 
 export function AboutPreview() {
   return (
-    <SectionShell className="bg-white">
+    <SectionShell className="bg-slate-50">
       <Reveal>
-        <div className="grid gap-6 rounded-3xl border border-pink-200 bg-[linear-gradient(130deg,#fff,#fff0f6)] p-5 shadow-sm sm:p-7 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+        <div className="grid gap-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-7 md:grid-cols-[1.2fr_0.8fr] md:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-pink-600">
               About Anna&apos;s Air
             </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl md:text-4xl">
               {siteContent.about.heading}
             </h2>
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">
@@ -29,7 +29,7 @@ export function AboutPreview() {
               </div>
               <Link
                 href="/about"
-                className="inline-flex rounded-full bg-gradient-to-r from-pink-600 to-pink-500 px-5 py-2.5 text-sm font-semibold text-white transition hover:from-pink-700 hover:to-pink-600 shadow-lg"
+                className="inline-flex rounded-full border border-pink-300 bg-white px-5 py-2.5 text-sm font-semibold text-pink-700 transition hover:bg-pink-50"
               >
                 Read the story
               </Link>

@@ -12,7 +12,7 @@ export function WhyAnnaSection() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-pink-600">
             Brand Difference
           </p>
-          <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
+          <h2 className="mt-3 text-balance text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl md:text-4xl">
             {siteContent.whySection.heading}
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-slate-700 sm:text-base">
@@ -21,11 +21,11 @@ export function WhyAnnaSection() {
         </div>
       </Reveal>
 
-      <div className="mx-auto mt-8 max-w-5xl rounded-3xl border border-pink-200 bg-gradient-to-br from-white to-pink-50/50 p-5 shadow-sm sm:p-6">
+      <div className="mx-auto mt-8 max-w-5xl rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm sm:p-6">
         <div className="grid gap-3 sm:grid-cols-2">
           {whyBullets.map((item, index) => (
             <Reveal key={item} delay={index * 0.05}>
-              <div className="flex items-center gap-2 rounded-2xl border border-pink-100 bg-white px-4 py-3 text-sm font-semibold text-slate-800">
+              <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm">
                 <span className="text-pink-500">✓</span>
                 <span>{item}</span>
               </div>

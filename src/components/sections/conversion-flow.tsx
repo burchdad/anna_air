@@ -8,13 +8,13 @@ const stepIcons = [PhoneCall, ClipboardCheck, Wrench];
 
 export function ConversionFlowSection() {
   return (
-    <SectionShell className="bg-gradient-to-b from-pink-50 to-pink-100">
+    <SectionShell className="bg-slate-50">
       <Reveal>
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-pink-600">
             Fast Service Process
           </p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
+          <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl md:text-4xl">
             {siteContent.conversionFlow.heading}
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">
@@ -30,11 +30,11 @@ export function ConversionFlowSection() {
 
           return (
             <Reveal key={step.title} delay={index * 0.08}>
-              <article className="h-full rounded-2xl border-2 border-pink-200 bg-white p-6 shadow-md hover:shadow-lg transition">
+              <article className="h-full rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
                 <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-pink-600/15 text-pink-600">
                   <Icon size={18} />
                 </div>
-                <h3 className="mt-4 text-xl font-semibold tracking-tight text-slate-950">{step.title}</h3>
+                <h3 className="mt-4 text-lg font-semibold tracking-tight text-slate-950 sm:text-xl">{step.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-700">{step.description}</p>
               </article>
             </Reveal>
