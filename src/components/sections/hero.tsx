@@ -70,8 +70,9 @@ export function Hero() {
             </a>
           </div>
 
-          <p className="text-xs text-slate-500 sm:text-sm">
-            License: {siteContent.business.licenseNumber} · {siteContent.business.insuredStatus}
+          <p className="mt-1 text-sm text-slate-500">
+            {siteContent.business.licenseNumber} • {siteContent.business.insuredStatus} •{" "}
+            {siteContent.business.emergencyLabel}
           </p>
 
           <p className="rounded-2xl border border-pink-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 lg:hidden">

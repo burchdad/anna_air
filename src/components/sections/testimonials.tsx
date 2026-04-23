@@ -32,6 +32,20 @@ export function TestimonialsSection() {
         </div>
       </Reveal>
 
+      <Reveal delay={0.04}>
+        <div className="mt-8 rounded-3xl border border-pink-200 bg-gradient-to-r from-pink-600 via-pink-500 to-pink-600 p-6 text-white shadow-[0_22px_50px_rgba(236,72,153,0.26)] sm:p-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/80">
+            Most-talked-about outcome
+          </p>
+          <p className="mt-3 text-2xl font-semibold leading-tight sm:text-3xl">
+            Cooling restored in 15 minutes - even with a newborn at home.
+          </p>
+          <p className="mt-2 text-sm text-white/90">
+            Real emergency call. Fast arrival. Immediate comfort restored for a local family.
+          </p>
+        </div>
+      </Reveal>
+
       <div className="mt-8 grid gap-3 sm:grid-cols-3">
         {siteContent.testimonialHighlights.map((item, index) => (
           <Reveal key={item} delay={index * 0.05}>

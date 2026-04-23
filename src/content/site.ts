@@ -58,9 +58,9 @@ export const siteContent = {
     { label: "Contact", href: "/contact" },
   ] as NavItem[],
   hero: {
-    headline: "When Your AC Goes Down in Texas Heat, We Show Up Fast",
+    headline: "Fast, Honest HVAC Service When Texas Heat Hits Hard",
     subheadline:
-      "Same-day cooling restoration. Licensed, insured, veteran-owned. Emergency calls prioritized.",
+      "Veteran-owned and operated. Licensed and insured. We show up when it matters.",
     supportCopy:
       "Your family shouldn't suffer in the heat. We do whatever it takes to get you cooling again the same day.",
     primaryCta: "Call Now — 210-895-1122",
@@ -80,13 +80,12 @@ export const siteContent = {
     "Free Estimates",
   ],
   whySection: {
-    heading: "Why Customers Trust Anna's Air",
-    subheading: "In Anna's own words:",
+    heading: "Why Anna's Air",
+    subheading: "",
     body: [
-      "I am Honest. You get straightforward recommendations and clear pricing — no pressure, no surprises. I explain what needs to happen in plain language so you can make the right decision for your family.",
-      "The summers in Texas are brutal. I will do whatever I need to do to get you cooling the same day. When your AC fails, waiting isn't an option — we prioritize emergency calls and move fast.",
-      "Respect matters. I treat your home like it's mine. Veteran discipline + female-owned care = service that shows up when it matters and gets the job done right the first time.",
+      "Texas summers are brutal. When your AC goes out, waiting is not an option. At Anna's Air, we do everything we can to get you cooling again as quickly as possible because your comfort matters.",
     ],
+    bullets: ["Honest service", "Fast response", "Local and dependable", "Licensed and insured"],
   },
   services: [
     {
