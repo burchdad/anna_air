@@ -13,7 +13,7 @@ export function Footer() {
             alt="Anna's Air LLC"
             width={120}
             height={60}
-            className="h-16 w-auto brightness-0 invert"
+            className="h-16 w-auto"
           />
           <p className="max-w-md text-sm text-pink-100">
             Premium local HVAC support with urgency, honesty, and professional care for
