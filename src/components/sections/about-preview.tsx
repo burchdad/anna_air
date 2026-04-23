@@ -9,7 +9,7 @@ export function AboutPreview() {
   return (
     <SectionShell className="bg-white">
       <Reveal>
-        <div className="grid gap-6 rounded-3xl border border-pink-200 bg-[linear-gradient(130deg,#fff,#fff0f6)] p-7 shadow-sm md:grid-cols-[1.2fr_0.8fr] md:items-center">
+        <div className="grid gap-6 rounded-3xl border border-pink-200 bg-[linear-gradient(130deg,#fff,#fff0f6)] p-5 shadow-sm sm:p-7 md:grid-cols-[1.2fr_0.8fr] md:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-pink-600">
               About Anna&apos;s Air
@@ -36,7 +36,7 @@ export function AboutPreview() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border-2 border-pink-200 shadow-[0_16px_40px_rgba(236,72,153,0.15)]">
+          <div className="hidden overflow-hidden rounded-3xl border-2 border-pink-200 shadow-[0_16px_40px_rgba(236,72,153,0.15)] md:block">
             <Image
               src="/images/door-hanger-back.jpg"
               alt="Anna's Air LLC — Company Owned and Operated by a Female Veteran"

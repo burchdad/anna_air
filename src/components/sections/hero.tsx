@@ -73,9 +73,14 @@ export function Hero() {
           <p className="text-xs text-slate-500 sm:text-sm">
             License: {siteContent.business.licenseNumber} · {siteContent.business.insuredStatus}
           </p>
+
+          <p className="rounded-2xl border border-pink-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 lg:hidden">
+            Fast response proof: cooling restored in about 15 minutes after arrival on a recent
+            emergency service call.
+          </p>
         </div>
 
-        <div className="space-y-5">
+        <div className="hidden space-y-5 lg:block">
           <div className="rounded-[2rem] border-2 border-pink-200 bg-[linear-gradient(145deg,rgba(255,255,255,0.98),rgba(253,242,248,0.95))] p-4 shadow-[0_24px_60px_rgba(236,72,153,0.18)] sm:p-5">
             <div className="flex flex-wrap items-start justify-between gap-3 rounded-3xl bg-gradient-to-r from-pink-600 to-pink-500 p-4 text-white sm:p-5">
               <div>
