@@ -72,18 +72,18 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-7">
+    <form onSubmit={onSubmit} className="space-y-4 rounded-3xl border border-pink-200 bg-white p-6 shadow-sm sm:p-7">
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="space-y-1.5 text-sm">
           <span className="font-medium text-slate-800">Full Name</span>
           <input
             value={state.name}
             onChange={(event) => setState((prev) => ({ ...prev, name: event.target.value }))}
-            className="w-full rounded-xl border border-slate-300 px-3 py-2.5 text-sm outline-none ring-rose-200 transition focus:border-rose-400 focus:ring"
+            className="w-full rounded-xl border border-pink-200 px-3 py-2.5 text-sm outline-none ring-pink-200 transition focus:border-pink-400 focus:ring"
             name="name"
             autoComplete="name"
           />
-          {errors.name ? <span className="text-xs text-rose-700">{errors.name}</span> : null}
+          {errors.name ? <span className="text-xs text-pink-700">{errors.name}</span> : null}
         </label>
 
         <label className="space-y-1.5 text-sm">
@@ -91,11 +91,11 @@ export function ContactForm() {
           <input
             value={state.phone}
             onChange={(event) => setState((prev) => ({ ...prev, phone: event.target.value }))}
-            className="w-full rounded-xl border border-slate-300 px-3 py-2.5 text-sm outline-none ring-rose-200 transition focus:border-rose-400 focus:ring"
+            className="w-full rounded-xl border border-pink-200 px-3 py-2.5 text-sm outline-none ring-pink-200 transition focus:border-pink-400 focus:ring"
             name="phone"
             autoComplete="tel"
           />
-          {errors.phone ? <span className="text-xs text-rose-700">{errors.phone}</span> : null}
+          {errors.phone ? <span className="text-xs text-pink-700">{errors.phone}</span> : null}
         </label>
       </div>
 
@@ -105,11 +105,11 @@ export function ContactForm() {
           <input
             value={state.email}
             onChange={(event) => setState((prev) => ({ ...prev, email: event.target.value }))}
-            className="w-full rounded-xl border border-slate-300 px-3 py-2.5 text-sm outline-none ring-rose-200 transition focus:border-rose-400 focus:ring"
+            className="w-full rounded-xl border border-pink-200 px-3 py-2.5 text-sm outline-none ring-pink-200 transition focus:border-pink-400 focus:ring"
             name="email"
             autoComplete="email"
           />
-          {errors.email ? <span className="text-xs text-rose-700">{errors.email}</span> : null}
+          {errors.email ? <span className="text-xs text-pink-700">{errors.email}</span> : null}
         </label>
 
         <label className="space-y-1.5 text-sm">
@@ -117,7 +117,7 @@ export function ContactForm() {
           <select
             value={state.service}
             onChange={(event) => setState((prev) => ({ ...prev, service: event.target.value }))}
-            className="w-full rounded-xl border border-slate-300 px-3 py-2.5 text-sm outline-none ring-rose-200 transition focus:border-rose-400 focus:ring"
+            className="w-full rounded-xl border border-pink-200 px-3 py-2.5 text-sm outline-none ring-pink-200 transition focus:border-pink-400 focus:ring"
             name="service"
           >
             <option value="">Select one</option>
@@ -127,7 +127,7 @@ export function ContactForm() {
               </option>
             ))}
           </select>
-          {errors.service ? <span className="text-xs text-rose-700">{errors.service}</span> : null}
+          {errors.service ? <span className="text-xs text-pink-700">{errors.service}</span> : null}
         </label>
       </div>
 
@@ -136,10 +136,10 @@ export function ContactForm() {
         <textarea
           value={state.message}
           onChange={(event) => setState((prev) => ({ ...prev, message: event.target.value }))}
-          className="min-h-28 w-full rounded-xl border border-slate-300 px-3 py-2.5 text-sm outline-none ring-rose-200 transition focus:border-rose-400 focus:ring"
+          className="min-h-28 w-full rounded-xl border border-pink-200 px-3 py-2.5 text-sm outline-none ring-pink-200 transition focus:border-pink-400 focus:ring"
           name="message"
         />
-        {errors.message ? <span className="text-xs text-rose-700">{errors.message}</span> : null}
+        {errors.message ? <span className="text-xs text-pink-700">{errors.message}</span> : null}
       </label>
 
       <label className="inline-flex items-center gap-2 text-sm text-slate-700">
@@ -149,14 +149,14 @@ export function ContactForm() {
           onChange={(event) =>
             setState((prev) => ({ ...prev, isEmergency: event.target.checked }))
           }
-          className="h-4 w-4 rounded border-slate-300 text-rose-600 focus:ring-rose-500"
+          className="h-4 w-4 rounded border-pink-300 text-pink-600 focus:ring-pink-500"
         />
         This is an emergency service request
       </label>
 
       <button
         type="submit"
-        className="inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 sm:w-auto"
+        className="inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-pink-600 to-pink-500 px-5 py-3 text-sm font-semibold text-white transition hover:from-pink-700 hover:to-pink-600 shadow-lg sm:w-auto"
       >
         Request Service
       </button>
@@ -169,7 +169,7 @@ export function ContactForm() {
       ) : null}
 
       {status === "error" ? (
-        <p className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-800">
+        <p className="rounded-xl border border-pink-200 bg-pink-50 px-3 py-2 text-sm text-pink-800">
           Please review the highlighted fields and try again.
         </p>
       ) : null}

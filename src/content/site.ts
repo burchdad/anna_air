@@ -24,9 +24,9 @@ export const siteContent = {
   business: {
     name: "Anna's Air",
     domain: "annasair.com",
-    phoneDisplay: "(000) 000-0000",
-    phoneHref: "tel:+10000000000",
-    email: "service@annasair.com",
+    phoneDisplay: "210-895-1122",
+    phoneHref: "tel:+12108951122",
+    email: "Annahoward60@gmail.com",
     licenseNumber: "TACLB155020E",
     insuredStatus: "Fully Insured",
     ownershipBadges: [
@@ -56,11 +56,11 @@ export const siteContent = {
     { label: "Contact", href: "/contact" },
   ] as NavItem[],
   hero: {
-    headline: "Reliable Heating and Cooling with a Different Standard of Care",
+    headline: "Fast, Honest Heating and Cooling When Texas Heat Hits Hard",
     subheadline:
-      "Anna's Air is built on honest recommendations, professional workmanship, and fast response when your comfort is on the line.",
+      "Veteran-owned and female-operated HVAC service built for urgent comfort calls, clear communication, and dependable work.",
     supportCopy:
-      "Veteran-owned leadership. Female-owned and operated service. Real urgency for Texas homes and families.",
+      "When your system fails, Anna's Air moves quickly and works hard to restore comfort the same day when possible.",
     primaryCta: "Call Now",
     secondaryCta: "Book Appointment",
   },
@@ -73,11 +73,11 @@ export const siteContent = {
     "Free Estimates",
   ],
   whySection: {
-    heading: "Why Anna's Air",
+    heading: "Why Homeowners Call Anna's Air First",
     body: [
-      "Most HVAC companies talk about service. Anna's Air is built to prove it with clear communication, fast response, and work done right.",
-      "In a high-pressure moment, you need someone steady and honest. Anna's Air is known for showing up, explaining what is wrong in plain language, and helping you choose the right next step without pressure.",
-      "Texas summers are brutal. When possible, Anna's Air works hard to get you cooling the same day because your family should not have to wait in the heat.",
+      "Most HVAC companies promise service. Anna's Air earns trust with clear recommendations, honest pricing, and workmanship that respects your home.",
+      "In high-pressure moments, you need someone calm and reliable. Anna's Air explains the issue in plain language and helps you choose the right next step without sales pressure.",
+      "Texas summers are brutal. When possible, Anna's Air works hard to restore cooling the same day because your family should not have to sit in the heat.",
     ],
   },
   services: [
@@ -154,6 +154,13 @@ export const siteContent = {
       "Anna started Anna's Air to deliver a better service experience: fast when it matters, transparent from start to finish, and grounded in real care for families under pressure.",
     values: ["Honesty", "Urgency", "Professionalism", "Respect"],
   },
+  whyCustomersTrust: {
+    heading: "Why Customers Trust Anna's Air",
+    values: [
+      "I am Honest",
+      "The summers in Texas are brutal, so I will do whatever I need to do to get you cooling the same day",
+    ],
+  },
   serviceAreas: {
     intro:
       "Anna's Air serves homeowners across North Texas with priority support for urgent heating and cooling needs.",
@@ -198,6 +205,37 @@ export const siteContent = {
     primary: "Call Anna's Air",
     secondary: "Book Service",
   },
+  conversionFlow: {
+    heading: "How Service Works",
+    steps: [
+      {
+        title: "Call or Request Service",
+        description:
+          "Tell Anna's Air what is happening and how urgent it feels. Emergency no-cooling calls are prioritized.",
+      },
+      {
+        title: "Get Clear Diagnostics",
+        description:
+          "Receive straightforward findings, practical options, and transparent recommendations before work begins.",
+      },
+      {
+        title: "Restore Comfort",
+        description:
+          "Repairs or system updates are completed professionally, with same-day cooling effort when possible.",
+      },
+    ],
+  },
+  heroProof: [
+    "Veteran-Owned",
+    "Female-Owned & Operated",
+    "Licensed: TACLB155020E",
+    "Fully Insured",
+  ],
+  testimonialHighlights: [
+    "Arrived in about 30 minutes",
+    "Cooling restored in about 15 minutes",
+    "Improved whole-home airflow and comfort",
+  ],
   legal: {
     claimNote:
       "Marketing language, including 'first female owned and operated HVAC company,' should be reviewed and adjusted as needed.",

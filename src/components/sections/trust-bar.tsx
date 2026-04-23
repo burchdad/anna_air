@@ -4,14 +4,19 @@ import { siteContent } from "@/content/site";
 
 export function TrustBar() {
   return (
-    <section className="border-y border-slate-200 bg-white px-4 py-5 sm:px-6 lg:px-8">
+    <section className="border-y border-pink-200 bg-gradient-to-r from-pink-600 via-pink-500 to-pink-600 px-4 py-6 sm:px-6 lg:px-8">
+      <div className="mx-auto mb-4 w-full max-w-6xl">
+        <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-white">
+          Trusted Credentials and Service Standards
+        </p>
+      </div>
       <div className="mx-auto grid w-full max-w-6xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {siteContent.trustBarItems.map((item) => (
           <div
             key={item}
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-sm font-medium text-slate-700"
+            className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/15 px-3 py-2 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/25 transition"
           >
-            <BadgeCheck size={16} className="text-rose-600" />
+            <BadgeCheck size={16} className="text-white" />
             {item}
           </div>
         ))}

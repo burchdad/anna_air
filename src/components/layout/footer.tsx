@@ -4,17 +4,17 @@ import { siteContent } from "@/content/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-slate-950 text-slate-200">
+    <footer className="border-t border-pink-200 bg-gradient-to-br from-pink-700 to-pink-800 text-white">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:px-8">
         <div className="space-y-4">
           <p className="text-xl font-semibold tracking-tight">{siteContent.business.name}</p>
-          <p className="max-w-md text-sm text-slate-300">
+          <p className="max-w-md text-sm text-pink-100">
             Premium local HVAC support with urgency, honesty, and professional care for
             Texas families.
           </p>
           <a
             href={siteContent.business.phoneHref}
-            className="inline-flex rounded-full bg-rose-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-rose-400"
+            className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-semibold text-pink-600 transition hover:bg-pink-50 shadow-lg"
           >
             {siteContent.hero.primaryCta}
           </a>
@@ -27,7 +27,7 @@ export function Footer() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block text-slate-300 transition hover:text-white"
+                className="block text-pink-100 transition hover:text-white"
               >
                 {item.label}
               </Link>
@@ -35,13 +35,13 @@ export function Footer() {
           </div>
           <div className="space-y-2">
             <p className="font-semibold text-white">Trust</p>
-            <p>License: {siteContent.business.licenseNumber}</p>
-            <p>{siteContent.business.insuredStatus}</p>
-            <p>{siteContent.business.emergencyLabel}</p>
+            <p className="text-pink-100">License: {siteContent.business.licenseNumber}</p>
+            <p className="text-pink-100">{siteContent.business.insuredStatus}</p>
+            <p className="text-pink-100">{siteContent.business.emergencyLabel}</p>
           </div>
         </div>
       </div>
-      <div className="border-t border-slate-800 px-4 py-4 text-center text-xs text-slate-400">
+      <div className="border-t border-pink-600 px-4 py-4 text-center text-xs text-pink-100">
         <p>
           © {new Date().getFullYear()} {siteContent.business.name}. All rights reserved.
         </p>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { AboutPreview } from "@/components/sections/about-preview";
 import { BrandsStrip } from "@/components/sections/brands-strip";
+import { ConversionFlowSection } from "@/components/sections/conversion-flow";
 import { CtaBand } from "@/components/sections/cta-band";
 import { FaqSection } from "@/components/sections/faq";
 import { Hero } from "@/components/sections/hero";
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <WhyAnnaSection />
+      <ConversionFlowSection />
       <ServicesGrid />
       <TestimonialsSection />
       <BrandsStrip />
