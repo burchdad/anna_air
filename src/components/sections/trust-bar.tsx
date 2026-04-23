@@ -14,10 +14,10 @@ export function TrustBar() {
         {siteContent.trustBarItems.map((item) => (
           <div
             key={item}
-            className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/15 px-3 py-2 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/25 transition"
+            className="inline-flex items-start gap-2 rounded-xl border border-white/30 bg-white/15 px-3 py-2 text-xs font-semibold text-white backdrop-blur-sm transition hover:bg-white/25 sm:text-sm"
           >
-            <BadgeCheck size={16} className="text-white" />
-            {item}
+            <BadgeCheck size={16} className="mt-0.5 shrink-0 text-white" />
+            <span className="min-w-0 leading-snug">{item}</span>
           </div>
         ))}
       </div>

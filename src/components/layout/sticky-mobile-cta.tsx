@@ -4,7 +4,7 @@ import { siteContent } from "@/content/site";
 
 export function StickyMobileCta() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-pink-200 bg-gradient-to-r from-pink-600 to-pink-500 p-3 shadow-2xl md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-pink-200 bg-gradient-to-r from-pink-600 to-pink-500 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 shadow-2xl md:hidden">
       <div className="text-center mb-2">
         <p className="text-xs font-semibold text-white/90 flex items-center justify-center gap-1">
           <AlertCircle size={14} />
@@ -14,14 +14,14 @@ export function StickyMobileCta() {
       <div className="mx-auto flex w-full max-w-md gap-2">
         <a
           href={siteContent.business.phoneHref}
-          className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-white px-3 py-3 text-sm font-bold text-pink-600 transition hover:bg-pink-50 active:scale-95"
+          className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-white px-2.5 py-3 text-[13px] font-bold text-pink-600 transition hover:bg-pink-50 active:scale-95"
         >
           <Phone size={16} />
           {siteContent.business.phoneDisplay}
         </a>
         <a
           href="/contact"
-          className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border-2 border-white text-white px-3 py-3 text-sm font-semibold transition hover:bg-white/15 active:scale-95"
+          className="inline-flex flex-1 items-center justify-center rounded-xl border-2 border-white px-2.5 py-3 text-[13px] font-semibold text-white transition hover:bg-white/15 active:scale-95"
         >
           Book Service
         </a>

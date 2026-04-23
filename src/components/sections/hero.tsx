@@ -6,11 +6,11 @@ import { siteContent } from "@/content/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-4 pb-14 pt-12 sm:px-6 lg:px-8 lg:pb-20 lg:pt-16">
+    <section className="relative overflow-hidden px-4 pb-10 pt-8 sm:px-6 sm:pb-14 sm:pt-12 lg:px-8 lg:pb-20 lg:pt-16">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_18%,rgba(236,72,153,0.25),transparent_40%),radial-gradient(circle_at_82%_12%,rgba(236,72,153,0.2),transparent_38%),linear-gradient(to_bottom,#fff,#fef2f6)]" />
 
-      <div className="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[1.12fr_0.88fr] lg:items-center">
-        <div className="space-y-7">
+      <div className="mx-auto grid w-full max-w-6xl gap-7 sm:gap-10 lg:grid-cols-[1.12fr_0.88fr] lg:items-center">
+        <div className="space-y-5 sm:space-y-7">
           <p className="inline-flex rounded-full border border-pink-200 bg-white/90 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-pink-700 shadow-sm">
             {siteContent.business.stateRegion} Heating and Cooling
           </p>
@@ -26,7 +26,7 @@ export function Hero() {
             ))}
           </div>
 
-          <h1 className="text-balance text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+          <h1 className="text-balance text-3xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
             {siteContent.hero.headline}
           </h1>
 
@@ -47,7 +47,7 @@ export function Hero() {
             {siteContent.hero.urgencyChecks.map((item) => (
               <div
                 key={item}
-                className="rounded-2xl border border-pink-200 bg-white/85 px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm"
+                className="rounded-2xl border border-pink-200 bg-white/85 px-3 py-2.5 text-xs font-semibold text-slate-800 shadow-sm sm:px-4 sm:py-3 sm:text-sm"
               >
                 {item}
               </div>
@@ -57,14 +57,14 @@ export function Hero() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
               href={siteContent.business.phoneHref}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-pink-600 to-pink-500 px-6 py-4 text-base font-bold text-white transition hover:from-pink-700 hover:to-pink-600 shadow-lg hover:shadow-xl active:scale-95"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-pink-600 to-pink-500 px-4 py-3 text-sm font-bold text-white transition hover:from-pink-700 hover:to-pink-600 shadow-lg hover:shadow-xl active:scale-95 sm:w-auto sm:px-6 sm:py-4 sm:text-base"
             >
               <AlertCircle size={18} />
               {siteContent.hero.primaryCta}
             </a>
             <a
               href="/contact"
-              className="inline-flex items-center justify-center rounded-full border-2 border-pink-300 bg-white px-6 py-4 text-base font-semibold text-pink-700 transition hover:border-pink-400 hover:bg-pink-50 active:scale-95"
+              className="inline-flex w-full items-center justify-center rounded-full border-2 border-pink-300 bg-white px-4 py-3 text-sm font-semibold text-pink-700 transition hover:border-pink-400 hover:bg-pink-50 active:scale-95 sm:w-auto sm:px-6 sm:py-4 sm:text-base"
             >
               {siteContent.hero.secondaryCta}
             </a>
@@ -76,19 +76,19 @@ export function Hero() {
         </div>
 
         <div className="space-y-5">
-          <div className="rounded-[2rem] border-2 border-pink-200 bg-[linear-gradient(145deg,rgba(255,255,255,0.98),rgba(253,242,248,0.95))] p-5 shadow-[0_24px_60px_rgba(236,72,153,0.18)]">
-            <div className="flex flex-wrap items-start justify-between gap-3 rounded-3xl bg-gradient-to-r from-pink-600 to-pink-500 p-5 text-white">
+          <div className="rounded-[2rem] border-2 border-pink-200 bg-[linear-gradient(145deg,rgba(255,255,255,0.98),rgba(253,242,248,0.95))] p-4 shadow-[0_24px_60px_rgba(236,72,153,0.18)] sm:p-5">
+            <div className="flex flex-wrap items-start justify-between gap-3 rounded-3xl bg-gradient-to-r from-pink-600 to-pink-500 p-4 text-white sm:p-5">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/80">
                   Emergency Response
                 </p>
-                <p className="mt-2 max-w-xs text-2xl font-semibold leading-tight">
+                <p className="mt-2 max-w-xs text-xl font-semibold leading-tight sm:text-2xl">
                   Cooling restored fast when comfort cannot wait.
                 </p>
               </div>
               <a
                 href={siteContent.business.phoneHref}
-                className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-pink-600 transition hover:bg-pink-50"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-pink-600 transition hover:bg-pink-50 sm:w-auto"
               >
                 <PhoneCall size={16} />
                 Call Anna now
@@ -96,7 +96,7 @@ export function Hero() {
             </div>
 
             <div className="mt-4 grid gap-4 md:grid-cols-[0.82fr_1.18fr]">
-              <div className="overflow-hidden rounded-3xl border border-pink-200 bg-white">
+              <div className="hidden overflow-hidden rounded-3xl border border-pink-200 bg-white md:block">
                 <Image
                   src="/images/door-hanger-back.jpg"
                   alt="Anna's Air LLC — Company owned and operated by a female veteran"
@@ -135,7 +135,7 @@ export function Hero() {
                   </div>
                 </div>
 
-                <div className="rounded-3xl border border-pink-200 bg-gradient-to-r from-pink-50 to-white p-5">
+                <div className="hidden rounded-3xl border border-pink-200 bg-gradient-to-r from-pink-50 to-white p-5 sm:block">
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-pink-600">
                     Why homeowners call now
                   </p>
