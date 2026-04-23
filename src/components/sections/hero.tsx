@@ -46,13 +46,14 @@ export function Hero() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
               href={siteContent.business.phoneHref}
-              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-pink-600 to-pink-500 px-6 py-3 text-sm font-semibold text-white transition hover:from-pink-700 hover:to-pink-600 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-pink-600 to-pink-500 px-6 py-4 text-base font-bold text-white transition hover:from-pink-700 hover:to-pink-600 shadow-lg hover:shadow-xl active:scale-95"
             >
+              <AlertCircle size={18} />
               {siteContent.hero.primaryCta}
             </a>
             <a
               href="/contact"
-              className="inline-flex items-center justify-center rounded-full border-2 border-pink-300 bg-white px-6 py-3 text-sm font-semibold text-pink-700 transition hover:border-pink-400 hover:bg-pink-50"
+              className="inline-flex items-center justify-center rounded-full border-2 border-pink-300 bg-white px-6 py-4 text-base font-semibold text-pink-700 transition hover:border-pink-400 hover:bg-pink-50 active:scale-95"
             >
               {siteContent.hero.secondaryCta}
             </a>

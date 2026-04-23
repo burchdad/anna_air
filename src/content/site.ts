@@ -56,13 +56,13 @@ export const siteContent = {
     { label: "Contact", href: "/contact" },
   ] as NavItem[],
   hero: {
-    headline: "Fast, Honest Heating and Cooling When Texas Heat Hits Hard",
+    headline: "When Your AC Goes Down in Texas Heat, We Show Up Fast",
     subheadline:
-      "Veteran-owned and female-operated HVAC service built for urgent comfort calls, clear communication, and dependable work.",
+      "Same-day cooling restoration. Licensed, insured, veteran-owned. Emergency calls prioritized.",
     supportCopy:
-      "When your system fails, Anna's Air moves quickly and works hard to restore comfort the same day when possible.",
-    primaryCta: "Call Now",
-    secondaryCta: "Book Appointment",
+      "Your family shouldn't suffer in the heat. We do whatever it takes to get you cooling again the same day.",
+    primaryCta: "Call Now — 210-895-1122",
+    secondaryCta: "Book Service",
   },
   trustBarItems: [
     "Female-Owned & Operated",
@@ -73,11 +73,12 @@ export const siteContent = {
     "Free Estimates",
   ],
   whySection: {
-    heading: "Why Homeowners Call Anna's Air First",
+    heading: "Why Customers Trust Anna's Air",
+    subheading: "In Anna's own words:",
     body: [
-      "Most HVAC companies promise service. Anna's Air earns trust with clear recommendations, honest pricing, and workmanship that respects your home.",
-      "In high-pressure moments, you need someone calm and reliable. Anna's Air explains the issue in plain language and helps you choose the right next step without sales pressure.",
-      "Texas summers are brutal. When possible, Anna's Air works hard to restore cooling the same day because your family should not have to sit in the heat.",
+      "I am Honest. You get straightforward recommendations and clear pricing — no pressure, no surprises. I explain what needs to happen in plain language so you can make the right decision for your family.",
+      "The summers in Texas are brutal. I will do whatever I need to do to get you cooling the same day. When your AC fails, waiting isn't an option — we prioritize emergency calls and move fast.",
+      "Respect matters. I treat your home like it's mine. Veteran discipline + female-owned care = service that shows up when it matters and gets the job done right the first time.",
     ],
   },
   services: [
@@ -203,10 +204,10 @@ export const siteContent = {
     },
   ] as FAQItem[],
   ctas: {
-    emergencyHeadline: "Need Cooling Fast?",
+    emergencyHeadline: "Your AC Stopped. We Show Up Fast.",
     emergencyBody:
-      "When your system fails in Texas heat, Anna's Air responds with urgency, honesty, and professional care.",
-    primary: "Call Anna's Air",
+      "Don't wait in the Texas heat. Call Anna's Air for same-day cooling restoration or emergency HVAC service.",
+    primary: "Call Now",
     secondary: "Book Service",
   },
   conversionFlow: {

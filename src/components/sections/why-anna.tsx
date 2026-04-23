@@ -13,6 +13,11 @@ export function WhyAnnaSection() {
           <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
             {siteContent.whySection.heading}
           </h2>
+          {siteContent.whySection.subheading && (
+            <p className="mt-2 text-sm text-pink-600 font-medium italic">
+              {siteContent.whySection.subheading}
+            </p>
+          )}
         </div>
       </Reveal>
 
