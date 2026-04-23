@@ -9,7 +9,7 @@ import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata(
   "Service Areas",
-  "See where Anna's Air provides heating and cooling service in North Texas, with room to grow city-specific SEO pages over time.",
+  "Anna's Air serves all areas from San Antonio to Comfort, Texas. Female-owned, veteran-operated HVAC — call anytime, 24/7.",
   "/service-areas",
 );
 
@@ -18,8 +18,8 @@ export default function ServiceAreasPage() {
     <>
       <PageHero
         eyebrow="Service Areas"
-        title="Local HVAC Service Across North Texas"
-        description="Anna's Air supports homeowners in nearby communities with responsive diagnostics, repairs, maintenance, and installation support."
+        title="San Antonio and Hill Country HVAC Service"
+        description="All areas from San Antonio to Comfort, Texas. If you need Anna's Air, I will be there. Call us anytime — we are a 24/7 company."
       />
 
       <SectionShell>
@@ -33,7 +33,7 @@ export default function ServiceAreasPage() {
               {siteContent.serviceAreas.primaryAreas.map((city) => (
                 <div
                   key={city}
-                  className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-medium text-slate-800"
+                  className="rounded-xl border border-pink-200 bg-pink-50 px-3 py-2 text-sm font-medium text-pink-800"
                 >
                   {city}
                 </div>

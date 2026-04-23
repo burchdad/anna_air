@@ -44,7 +44,7 @@ export const siteContent = {
     defaultTitle: "Anna's Air | Heating and Cooling Service in Texas",
     titleTemplate: "%s | Anna's Air",
     defaultDescription:
-      "Anna's Air delivers honest, responsive heating and cooling service in Texas with veteran-owned leadership, clear communication, and fast support when comfort matters most.",
+      "Anna's Air delivers honest, responsive heating and cooling service in San Antonio and surrounding Hill Country with veteran-owned, female-operated leadership and same-day urgency.",
     ogImage: "/images/og-annas-air.svg",
   },
   navigation: [
@@ -163,19 +163,23 @@ export const siteContent = {
   },
   serviceAreas: {
     intro:
-      "Anna's Air serves homeowners across North Texas with priority support for urgent heating and cooling needs.",
+      "Anna's Air serves homeowners across San Antonio and the surrounding Hill Country with priority support for urgent heating and cooling needs. All areas from San Antonio to Comfort, Texas — if you need Anna's Air, I will be there.",
     primaryAreas: [
-      "Anna",
-      "McKinney",
-      "Melissa",
-      "Van Alstyne",
-      "Sherman",
-      "Denison",
-      "Prosper",
-      "Celina",
+      "San Antonio",
+      "Leon Valley",
+      "Helotes",
+      "Boerne",
+      "Bulverde",
+      "Spring Branch",
+      "Canyon Lake",
+      "Converse",
+      "Schertz",
+      "Universal City",
+      "Live Oak",
+      "Comfort",
     ],
     expansionNote:
-      "Need service nearby? Reach out. Service area updates and dedicated city pages can be added as the company grows.",
+      "Need service nearby? Call us anytime. Anna's Air is a 24/7 company — reach out and we will confirm coverage.",
   },
   faq: [
     {
@@ -186,7 +190,7 @@ export const siteContent = {
     {
       question: "What areas do you serve?",
       answer:
-        "Anna's Air serves North Texas communities, including Anna, McKinney, Melissa, and nearby areas. Contact us to confirm service at your address.",
+        "All areas from San Antonio to Comfort, Texas. If you need Anna's Air, I will be there. Call us anytime — Anna's Air is a 24/7 company.",
     },
     {
       question: "How much is a system check?",

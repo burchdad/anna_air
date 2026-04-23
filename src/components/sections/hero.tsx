@@ -1,4 +1,6 @@
-import { AlertCircle, ShieldCheck, Sparkles, TimerReset } from "lucide-react";
+import Image from "next/image";
+
+import { AlertCircle, Sparkles } from "lucide-react";
 
 import { siteContent } from "@/content/site";
 
@@ -61,39 +63,30 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="rounded-3xl border-2 border-pink-200 bg-gradient-to-br from-white to-pink-50 p-6 shadow-[0_24px_60px_rgba(236,72,153,0.15)] backdrop-blur">
-          <div className="space-y-5">
+        <div className="space-y-5">
+          <div className="overflow-hidden rounded-3xl border-2 border-pink-200 shadow-[0_24px_60px_rgba(236,72,153,0.18)]">
+            <Image
+              src="/images/door-hanger-front.jpg"
+              alt="Anna's Air Heating and Cooling — She Believed She Could So She Did"
+              width={420}
+              height={560}
+              className="w-full object-cover"
+              priority
+            />
+          </div>
+
+          <div className="rounded-3xl border-2 border-pink-200 bg-gradient-to-br from-white to-pink-50 p-5">
             <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-pink-700">
               <Sparkles size={14} />
-              Trusted Local Care
+              Real Customer Outcomes
             </div>
-            <h2 className="text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">
-              Fast help without the pressure.
-            </h2>
-            <p className="text-sm leading-relaxed text-slate-700">
-              {siteContent.business.sameDayStatement}
-            </p>
-            <div className="space-y-3 rounded-2xl bg-gradient-to-br from-pink-50 to-rose-50 p-4 text-sm text-slate-700">
-              <div className="flex items-center gap-2">
-                <ShieldCheck size={16} className="text-pink-600" />
-                Veteran-led standards and clear recommendations
-              </div>
-              <div className="flex items-center gap-2">
-                <TimerReset size={16} className="text-pink-600" />
-                Responsive scheduling for urgent comfort needs
-              </div>
-            </div>
-
-            <div className="rounded-2xl border-2 border-pink-200 bg-gradient-to-br from-pink-100/50 to-rose-100/50 p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-pink-700">
-                Real Customer Outcomes
-              </p>
-              <ul className="mt-2 space-y-1.5 text-sm text-slate-700">
-                {siteContent.testimonialHighlights.map((item) => (
-                  <li key={item}>• {item}</li>
-                ))}
-              </ul>
-            </div>
+            <ul className="mt-3 space-y-1.5 text-sm text-slate-700">
+              {siteContent.testimonialHighlights.map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <span className="text-pink-500">✓</span> {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

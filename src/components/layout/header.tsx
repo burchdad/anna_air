@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { PhoneCall } from "lucide-react";
@@ -10,9 +11,13 @@ export function Header() {
       <div className="mx-auto w-full max-w-6xl px-4 py-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="group inline-flex items-center gap-2">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-pink-500 to-pink-600 text-sm font-bold text-white shadow-sm">
-              AA
-            </span>
+            <Image
+              src="/images/logo.png"
+              alt="Anna's Air LLC logo"
+              width={48}
+              height={48}
+              className="h-12 w-auto"
+            />
             <div>
               <p className="text-base font-semibold tracking-tight text-slate-950">
                 {siteContent.business.name}

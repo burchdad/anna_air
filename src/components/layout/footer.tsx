@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { siteContent } from "@/content/site";
@@ -7,10 +8,16 @@ export function Footer() {
     <footer className="border-t border-pink-200 bg-gradient-to-br from-pink-700 to-pink-800 text-white">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:px-8">
         <div className="space-y-4">
-          <p className="text-xl font-semibold tracking-tight">{siteContent.business.name}</p>
+          <Image
+            src="/images/logo.png"
+            alt="Anna's Air LLC"
+            width={120}
+            height={60}
+            className="h-16 w-auto brightness-0 invert"
+          />
           <p className="max-w-md text-sm text-pink-100">
             Premium local HVAC support with urgency, honesty, and professional care for
-            Texas families.
+            Texas families. Serving San Antonio and surrounding Hill Country.
           </p>
           <a
             href={siteContent.business.phoneHref}
