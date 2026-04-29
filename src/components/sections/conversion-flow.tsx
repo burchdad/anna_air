@@ -24,7 +24,7 @@ export function ConversionFlowSection() {
         </div>
       </Reveal>
 
-      <div className="mt-8 grid gap-4 md:grid-cols-3">
+      <div className="mx-auto mt-8 grid max-w-4xl gap-4 md:grid-cols-2">
         {siteContent.conversionFlow.steps.map((step, index) => {
           const Icon = stepIcons[index] ?? ArrowRight;
 
