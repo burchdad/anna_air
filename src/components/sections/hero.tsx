@@ -12,24 +12,22 @@ export function Hero() {
       <div className="mx-auto w-full max-w-5xl rounded-[2rem] border-2 border-pink-200 bg-white/90 p-5 text-center shadow-[0_24px_60px_rgba(236,72,153,0.18)] sm:p-8 md:p-10">
         <div className="mx-auto flex w-full justify-center">
           <Image
-            src="/images/logo 03 chng.png"
+            src="/images/Screenshot 2026-04-29 162520.png"
             alt="Anna's Air LLC flame and snow logo"
-            width={1851}
-            height={1218}
-            className="h-auto w-full max-w-[540px] sm:max-w-[700px] md:max-w-[820px]"
+            width={1051}
+            height={523}
+            className="h-auto w-full max-w-[760px] sm:max-w-[880px] md:max-w-[980px]"
             priority
           />
         </div>
 
-        <div className="mt-5 flex flex-wrap justify-center gap-2 sm:gap-3">
-          {siteContent.heroProof.map((item) => (
-            <span
-              key={item}
-              className="inline-flex rounded-full border border-pink-300 bg-gradient-to-r from-pink-50 to-white px-3 py-1.5 text-xs font-semibold text-pink-700 sm:text-sm"
-            >
-              {item}
-            </span>
-          ))}
+        <div className="mt-4 space-y-1 sm:space-y-2">
+          <p className="text-balance text-3xl font-extrabold tracking-tight text-pink-700 sm:text-4xl md:text-5xl">
+            She Believed She Could So She Did
+          </p>
+          <p className="text-balance text-xl font-extrabold tracking-tight text-pink-700 sm:text-2xl md:text-3xl">
+            Business Phone (210) 895 - 1122
+          </p>
         </div>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
