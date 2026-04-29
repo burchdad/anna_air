@@ -10,14 +10,16 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_18%,rgba(236,72,153,0.25),transparent_40%),radial-gradient(circle_at_82%_12%,rgba(236,72,153,0.2),transparent_38%),linear-gradient(to_bottom,#fff,#fef2f6)]" />
 
       <div className="mx-auto w-full max-w-5xl rounded-[2rem] border-2 border-pink-200 bg-white/90 p-5 text-center shadow-[0_24px_60px_rgba(236,72,153,0.18)] sm:p-8 md:p-10">
-        <Image
-          src="/images/logo.png"
-          alt="Anna's Air LLC flame and snow logo"
-          width={520}
-          height={520}
-          className="mx-auto h-auto w-full max-w-[500px] sm:max-w-[680px] md:max-w-[760px]"
-          priority
-        />
+        <div className="mx-auto flex w-full justify-center">
+          <Image
+            src="/images/logo.png"
+            alt="Anna's Air LLC flame and snow logo"
+            width={520}
+            height={520}
+            className="h-auto w-full max-w-[500px] sm:max-w-[680px] md:max-w-[760px] -translate-x-1 sm:-translate-x-2"
+            priority
+          />
+        </div>
 
         <a
           href={siteContent.business.phoneHref}
