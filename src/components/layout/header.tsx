@@ -49,9 +49,9 @@ export function Header() {
             <Image
               src="/images/Triangledot logo.png"
               alt="Triangledot logo"
-              width={48}
-              height={48}
-              className="h-10 w-auto sm:h-12"
+              width={489}
+              height={177}
+              className="h-8 w-auto shrink-0 sm:h-10"
             />
             <div>
               <p className="text-sm font-semibold tracking-tight text-slate-950 sm:text-base">

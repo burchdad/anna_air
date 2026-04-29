@@ -39,7 +39,7 @@ export function BrandsStrip() {
         <Reveal delay={0.14}>
           <div className="mx-auto max-w-[280px] rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm">
             <Image
-              src="/images/rheem.jpg"
+              src="/images/rheem.png"
               alt="Rheem logo"
               width={600}
               height={280}
