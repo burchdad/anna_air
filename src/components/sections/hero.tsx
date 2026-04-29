@@ -12,23 +12,16 @@ export function Hero() {
       <div className="mx-auto w-full max-w-5xl rounded-[2rem] border-2 border-pink-200 bg-white/90 p-5 text-center shadow-[0_24px_60px_rgba(236,72,153,0.18)] sm:p-8 md:p-10">
         <div className="mx-auto flex w-full justify-center">
           <Image
-            src="/images/logo.png"
+            src="/images/logo 03 chng.png"
             alt="Anna's Air LLC flame and snow logo"
-            width={520}
-            height={520}
-            className="h-auto w-full max-w-[500px] sm:max-w-[680px] md:max-w-[760px] -translate-x-1 sm:-translate-x-2"
+            width={1851}
+            height={1218}
+            className="h-auto w-full max-w-[540px] sm:max-w-[700px] md:max-w-[820px]"
             priority
           />
         </div>
 
-        <a
-          href={siteContent.business.phoneHref}
-          className="mt-4 inline-block text-4xl font-extrabold tracking-tight text-pink-700 transition hover:text-pink-800 sm:text-5xl"
-        >
-          {siteContent.business.phoneDisplay}
-        </a>
-
-        <div className="mt-6 flex flex-wrap justify-center gap-2 sm:gap-3">
+        <div className="mt-5 flex flex-wrap justify-center gap-2 sm:gap-3">
           {siteContent.heroProof.map((item) => (
             <span
               key={item}
