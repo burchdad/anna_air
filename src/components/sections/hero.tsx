@@ -13,19 +13,15 @@ export function Hero() {
         <Image
           src="/images/logo.png"
           alt="Anna's Air LLC flame and snow logo"
-          width={320}
-          height={320}
-          className="mx-auto h-auto w-full max-w-[300px] sm:max-w-[380px] md:max-w-[440px]"
+          width={520}
+          height={520}
+          className="mx-auto h-auto w-full max-w-[360px] sm:max-w-[500px] md:max-w-[560px]"
           priority
         />
 
-        <h1 className="mt-5 text-balance text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl md:text-5xl">
-          {siteContent.hero.headline}
-        </h1>
-
         <a
           href={siteContent.business.phoneHref}
-          className="mt-5 inline-block text-4xl font-extrabold tracking-tight text-pink-700 transition hover:text-pink-800 sm:text-5xl"
+          className="mt-4 inline-block text-4xl font-extrabold tracking-tight text-pink-700 transition hover:text-pink-800 sm:text-5xl"
         >
           {siteContent.business.phoneDisplay}
         </a>
