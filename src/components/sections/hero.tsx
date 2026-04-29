@@ -15,7 +15,7 @@ export function Hero() {
           alt="Anna's Air LLC flame and snow logo"
           width={520}
           height={520}
-          className="mx-auto h-auto w-full max-w-[360px] sm:max-w-[500px] md:max-w-[560px]"
+          className="mx-auto h-auto w-full max-w-[500px] sm:max-w-[680px] md:max-w-[760px]"
           priority
         />
 
