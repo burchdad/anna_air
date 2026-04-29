@@ -24,9 +24,6 @@ export function AboutPreview() {
               <div className="rounded-2xl border border-pink-200 bg-white p-4 text-sm text-pink-800 font-medium shadow-sm">
                 {siteContent.about.firstFemaleClaim}
               </div>
-              <div className="rounded-2xl border border-pink-100 bg-white p-4 text-sm text-slate-700 shadow-sm">
-                Female Veteran Owned and Operated
-              </div>
               <Link
                 href="/about"
                 className="inline-flex rounded-full border border-pink-300 bg-white px-5 py-2.5 text-sm font-semibold text-pink-700 transition hover:bg-pink-50"
