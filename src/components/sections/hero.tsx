@@ -30,6 +30,17 @@ export function Hero() {
           </p>
         </div>
 
+        <div className="mt-5 flex flex-wrap justify-center gap-2 sm:gap-3">
+          {siteContent.heroProof.map((item) => (
+            <span
+              key={item}
+              className="inline-flex rounded-full border border-pink-300 bg-gradient-to-r from-pink-50 to-white px-3 py-1.5 text-xs font-semibold text-pink-700 sm:text-sm"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
           <a
             href={siteContent.business.phoneHref}
