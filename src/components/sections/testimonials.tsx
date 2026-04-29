@@ -19,8 +19,8 @@ export function TestimonialsSection() {
               Homeowners call Anna&apos;s Air when comfort cannot wait
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">
-              Fast response, honest pricing, and real comfort improvements from actual local
-              service calls.
+              All equipment and brands are serviced, including mini splits, communicating
+              systems, and specialty units.
             </p>
           </div>
           <Link

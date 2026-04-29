@@ -21,10 +21,9 @@ export function Footer() {
           </p>
           <a
             href={siteContent.business.phoneHref}
-            className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-semibold text-pink-600 transition hover:bg-pink-50 shadow-lg"
+            className="inline-flex rounded-full bg-white px-5 py-2.5 text-base font-bold text-pink-600 shadow-lg transition hover:bg-pink-50"
           >
-            <span className="sm:hidden">Call {siteContent.business.phoneDisplay}</span>
-            <span className="hidden sm:inline">{siteContent.hero.primaryCta}</span>
+            <span>Call {siteContent.business.phoneDisplay}</span>
           </a>
         </div>
 

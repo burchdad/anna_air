@@ -86,7 +86,6 @@ export function ContactForm() {
   const serviceOptions = useMemo(
     () => [
       "AC Repair",
-      "Heating Repair",
       "System Check / Maintenance",
       "Complete Installation",
       "Emergency HVAC Service",

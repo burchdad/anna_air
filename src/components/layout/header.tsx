@@ -47,8 +47,8 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="group inline-flex items-center gap-2">
             <Image
-              src="/images/logo.png"
-              alt="Anna's Air LLC logo"
+              src="/images/Triangledot logo.png"
+              alt="Triangledot logo"
               width={48}
               height={48}
               className="h-10 w-auto sm:h-12"
@@ -75,7 +75,7 @@ export function Header() {
 
           <a
             href={siteContent.business.phoneHref}
-            className="hidden items-center gap-2 rounded-full bg-pink-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-pink-700 shadow-lg md:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-pink-600 px-5 py-2.5 text-base font-semibold text-white shadow-lg transition hover:bg-pink-700 md:inline-flex"
           >
             <PhoneCall size={16} />
             Call Now
@@ -142,7 +142,7 @@ export function Header() {
               <a
                 href={siteContent.business.phoneHref}
                 onClick={() => setIsMenuOpen(false)}
-                className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-pink-600 px-4 py-3 text-sm font-bold text-white transition hover:bg-pink-700"
+                className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-pink-600 px-4 py-3 text-base font-bold text-white transition hover:bg-pink-700"
               >
                 <PhoneCall size={16} />
                 Call Now

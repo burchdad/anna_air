@@ -16,7 +16,7 @@ import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata(
   "Anna's Air | San Antonio HVAC Service",
-  "Fast, honest HVAC service for San Antonio and Hill Country homeowners from a female-owned, veteran-owned company focused on emergency response and clear communication.",
+  "Fast, honest HVAC service for San Antonio and Hill Country homeowners from a female veteran-owned company focused on emergency response and clear communication.",
   "/",
 );
 

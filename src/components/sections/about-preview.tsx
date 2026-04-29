@@ -25,7 +25,7 @@ export function AboutPreview() {
                 {siteContent.about.firstFemaleClaim}
               </div>
               <div className="rounded-2xl border border-pink-100 bg-white p-4 text-sm text-slate-700 shadow-sm">
-                Veteran-owned standards with respectful service
+                Female Veteran Owned and Operated
               </div>
               <Link
                 href="/about"

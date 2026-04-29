@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata(
   "HVAC Services",
-  "Explore AC repair, heating repair, system checks, emergency HVAC service, installations, and airflow support from Anna's Air.",
+  "Explore AC repair, system checks, complete installations, ductwork improvements, and emergency HVAC support from Anna's Air.",
   "/services",
 );
 

@@ -30,11 +30,11 @@ export const siteContent = {
     bookingLabel: "Book Service",
     email: "Annahoward60@gmail.com",
     licenseNumber: "TACLB155020E",
-    insuredStatus: "Fully Insured",
+    insuredStatus: "Licensed and Fully Insured",
     ownershipBadges: [
-      "Female-Owned & Operated",
-      "Veteran-Owned",
-      "First female owned and operated HVAC company",
+      "Female Veteran Owned and Operated",
+      "Licensed and Fully Insured",
+      "TACLB155020E",
     ],
     emergencyLabel: "Emergency Service Available",
     freeEstimateLabel: "Free Estimates",
@@ -46,7 +46,7 @@ export const siteContent = {
     defaultTitle: "Anna's Air | San Antonio HVAC Service",
     titleTemplate: "%s | Anna's Air",
     defaultDescription:
-      "Anna's Air delivers fast, honest HVAC service across San Antonio and the Hill Country with veteran-owned, female-operated leadership, same-day urgency, and emergency support.",
+      "Anna's Air delivers fast, honest HVAC service across San Antonio and the Hill Country with female veteran-owned leadership, same-day urgency, and emergency support.",
     ogImage: "/images/og-annas-air.svg",
   },
   navigation: [
@@ -58,11 +58,9 @@ export const siteContent = {
     { label: "Contact", href: "/contact" },
   ] as NavItem[],
   hero: {
-    headline: "Fast, Honest HVAC Service When Texas Heat Hits Hard",
-    subheadline:
-      "Veteran-owned and operated. Licensed and insured. We show up when it matters.",
-    supportCopy:
-      "Your family shouldn't suffer in the heat. We do whatever it takes to get you cooling again the same day.",
+    headline: "She believed she could, so she did.",
+    subheadline: "Female Veteran Owned and Operated",
+    supportCopy: "Licensed and Fully Insured",
     primaryCta: "Call Now",
     secondaryCta: "Book Service",
     urgencyChecks: [
@@ -72,10 +70,10 @@ export const siteContent = {
     ],
   },
   trustBarItems: [
-    "Female-Owned & Operated",
-    "Veteran-Owned",
-    "Licensed: TACLB155020E",
-    "Fully Insured",
+    "Female Veteran Owned and Operated",
+    "Financing Available",
+    "TACLB155020E",
+    "Licensed and Insured",
     "Emergency Service Available",
     "Free Estimates",
   ],
@@ -83,9 +81,9 @@ export const siteContent = {
     heading: "Why Anna's Air",
     subheading: "",
     body: [
-      "Texas summers are brutal. When your AC goes out, waiting is not an option. At Anna's Air, we do everything we can to get you cooling again as quickly as possible because your comfort matters.",
+      "Anna started Anna's Air to deliver an honest, better service experience with a fast response time, along with reasonable and fair pricing.",
     ],
-    bullets: ["Honest service", "Fast response", "Local and dependable", "Licensed and insured"],
+    bullets: [],
   },
   services: [
     {
@@ -95,28 +93,16 @@ export const siteContent = {
       slug: "ac-repair",
     },
     {
-      title: "Heating Repair",
-      description:
-        "Restore heat quickly with dependable service when your system stops warming your home safely.",
-      slug: "heating-repair",
-    },
-    {
       title: "System Check and Maintenance",
       description:
-        "Seasonal checkups help prevent surprise breakdowns and keep your system ready when weather turns extreme.",
+        "Seasonal checkups help prevent breakdowns, keep your system running more efficiently, and help your HVAC equipment last longer than unserviced equipment.",
       slug: "system-check-maintenance",
     },
     {
       title: "Complete Installation",
       description:
-        "Replace outdated equipment with a right-fit system planned for reliable, efficient long-term comfort.",
+        "Replace outdated equipment with a high-efficiency system that comes with a 10-year warranty and rebates. Anna's Air LLC carries all brands of equipment.",
       slug: "complete-installation",
-    },
-    {
-      title: "Emergency HVAC Service",
-      description:
-        "Urgent support for no-cooling and no-heat situations when waiting is not an option.",
-      slug: "emergency-hvac-service",
     },
     {
       title: "Ductwork and Airflow Performance",
@@ -144,12 +130,12 @@ export const siteContent = {
   ] as Testimonial[],
   brandsServiced: [
     "Carrier",
-    "Goodman",
-    "Trane",
+    "Day and Night",
     "Lennox",
-    "Day & Night",
     "Ruud",
+    "Goodman",
     "American Standard",
+    "etc.",
   ],
   about: {
     heading: "Built to Serve with Integrity",
@@ -158,15 +144,8 @@ export const siteContent = {
     firstFemaleClaim:
       "First female owned and operated HVAC company",
     story:
-      "Anna started Anna's Air to deliver a better service experience: fast when it matters, transparent from start to finish, and grounded in real care for families under pressure.",
+      "Anna started Anna's Air to deliver an honest, better service experience with a fast response time, along with reasonable and fair pricing.",
     values: ["Honesty", "Urgency", "Professionalism", "Respect"],
-  },
-  whyCustomersTrust: {
-    heading: "Why Customers Trust Anna's Air",
-    values: [
-      "I am Honest",
-      "The summers in Texas are brutal, so I will do whatever I need to do to get you cooling the same day",
-    ],
   },
   serviceAreas: {
     intro:
@@ -210,7 +189,7 @@ export const siteContent = {
     },
   ] as FAQItem[],
   ctas: {
-    emergencyHeadline: "Your AC Stopped. We Show Up Fast.",
+    emergencyHeadline: "Emergency Services 24/7 - Call Now or Book Service",
     emergencyBody:
       "Don't wait in the Texas heat. Call Anna's Air for same-day cooling restoration or emergency HVAC service.",
     primary: "Call Now",
@@ -229,18 +208,12 @@ export const siteContent = {
         description:
           "Receive straightforward findings, practical options, and transparent recommendations before work begins.",
       },
-      {
-        title: "Restore Comfort",
-        description:
-          "Repairs or system updates are completed professionally, with same-day cooling effort when possible.",
-      },
     ],
   },
   heroProof: [
-    "Veteran-Owned",
-    "Female-Owned & Operated",
-    "Licensed: TACLB155020E",
-    "Fully Insured",
+    "Female Veteran Owned and Operated",
+    "Licensed and Fully Insured",
+    "TACLB155020E",
   ],
   testimonialHighlights: [
     "Arrived in about 30 minutes",

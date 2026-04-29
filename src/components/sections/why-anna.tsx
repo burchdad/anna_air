@@ -1,10 +1,10 @@
+import Image from "next/image";
+
 import { Reveal } from "@/components/sections/reveal";
 import { SectionShell } from "@/components/sections/section-shell";
 import { siteContent } from "@/content/site";
 
 export function WhyAnnaSection() {
-  const whyBullets = siteContent.whySection.bullets ?? [];
-
   return (
     <SectionShell id="why-annas-air" className="bg-white">
       <Reveal>
@@ -22,15 +22,32 @@ export function WhyAnnaSection() {
       </Reveal>
 
       <div className="mx-auto mt-8 max-w-5xl rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm sm:p-6">
-        <div className="grid gap-3 sm:grid-cols-2">
-          {whyBullets.map((item, index) => (
-            <Reveal key={item} delay={index * 0.05}>
-              <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm">
-                <span className="text-pink-500">✓</span>
-                <span>{item}</span>
+        <div className="grid gap-5 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+          <Reveal>
+            <div className="space-y-3">
+              <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm">
+                Female Veteran Owned and Operated
               </div>
-            </Reveal>
-          ))}
+              <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm">
+                Financing Available
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm">
+                Licensed and Fully Insured
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.06}>
+            <div className="mx-auto w-full max-w-[280px] overflow-hidden rounded-2xl border border-pink-200 bg-white shadow-sm">
+              <Image
+                src="/images/Rosie the Riveter.png"
+                alt="Rosie the Riveter artwork"
+                width={640}
+                height={640}
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </Reveal>
         </div>
       </div>
     </SectionShell>

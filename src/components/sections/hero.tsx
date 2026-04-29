@@ -1,163 +1,65 @@
 import Image from "next/image";
 
-import { AlertCircle, PhoneCall, Sparkles } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 
 import { siteContent } from "@/content/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-4 pb-8 pt-6 sm:px-6 sm:pb-12 sm:pt-10 md:px-12 md:pb-16 md:pt-14">
+    <section className="relative overflow-hidden px-4 pb-10 pt-8 sm:px-6 sm:pb-14 sm:pt-10 md:px-12 md:pb-16 md:pt-14">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_18%,rgba(236,72,153,0.25),transparent_40%),radial-gradient(circle_at_82%_12%,rgba(236,72,153,0.2),transparent_38%),linear-gradient(to_bottom,#fff,#fef2f6)]" />
 
-      <div className="mx-auto grid w-full max-w-7xl gap-6 sm:gap-8 lg:grid-cols-[1.12fr_0.88fr] lg:items-center">
-        <div className="space-y-5 text-center lg:text-left">
-          <p className="inline-flex rounded-full border border-pink-200 bg-white/90 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-pink-700 shadow-sm">
-            {siteContent.business.stateRegion} Heating and Cooling
-          </p>
+      <div className="mx-auto w-full max-w-5xl rounded-[2rem] border-2 border-pink-200 bg-white/90 p-5 text-center shadow-[0_24px_60px_rgba(236,72,153,0.18)] sm:p-8 md:p-10">
+        <Image
+          src="/images/logo.png"
+          alt="Anna's Air LLC flame and snow logo"
+          width={320}
+          height={320}
+          className="mx-auto h-auto w-full max-w-[230px] sm:max-w-[280px]"
+          priority
+        />
 
-          <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
-            {siteContent.heroProof.map((item) => (
-              <span
-                key={item}
-                className="inline-flex rounded-full border border-pink-200 bg-gradient-to-r from-pink-50 to-white px-3 py-1 text-xs font-semibold text-pink-700"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
+        <h1 className="mt-5 text-balance text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl md:text-5xl">
+          {siteContent.hero.headline}
+        </h1>
 
-          <h1 className="text-balance text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl md:text-5xl">
-            {siteContent.hero.headline}
-          </h1>
+        <a
+          href={siteContent.business.phoneHref}
+          className="mt-5 inline-block text-4xl font-extrabold tracking-tight text-pink-700 transition hover:text-pink-800 sm:text-5xl"
+        >
+          {siteContent.business.phoneDisplay}
+        </a>
 
-          <p className="mx-auto max-w-2xl text-pretty text-base leading-relaxed text-slate-700 sm:text-lg lg:mx-0">
-            {siteContent.hero.subheadline}
-          </p>
-
-          <p className="mx-auto max-w-2xl text-pretty text-sm leading-relaxed text-slate-600 sm:text-base lg:mx-0">
-            {siteContent.hero.supportCopy}
-          </p>
-
-          <p className="inline-flex items-center gap-2 rounded-xl border border-pink-200 bg-gradient-to-r from-pink-50 to-rose-50 px-3 py-2 text-xs font-semibold text-pink-900 sm:text-sm">
-            <AlertCircle size={16} className="text-pink-600" />
-            Emergency service available for urgent no-cooling and no-heat calls
-          </p>
-
-          <div className="hidden gap-2 sm:grid sm:grid-cols-3">
-            {siteContent.hero.urgencyChecks.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-pink-200 bg-white/85 px-3 py-2.5 text-xs font-semibold text-slate-800 shadow-sm sm:px-4 sm:py-3 sm:text-sm"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
-            <a
-              href={siteContent.business.phoneHref}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-pink-600 px-4 py-3 text-sm font-bold text-white transition hover:bg-pink-700 shadow-lg hover:shadow-xl active:scale-95 sm:w-auto sm:px-6 sm:py-4 sm:text-base"
+        <div className="mt-6 flex flex-wrap justify-center gap-2 sm:gap-3">
+          {siteContent.heroProof.map((item) => (
+            <span
+              key={item}
+              className="inline-flex rounded-full border border-pink-200 bg-gradient-to-r from-pink-50 to-white px-3 py-1.5 text-xs font-semibold text-pink-700 sm:text-sm"
             >
-              <AlertCircle size={18} />
-              Call Now
-            </a>
-            <a
-              href="/contact"
-              className="inline-flex w-full items-center justify-center rounded-full border-2 border-pink-300 bg-white px-4 py-3 text-sm font-semibold text-pink-700 transition hover:border-pink-400 hover:bg-pink-50 active:scale-95 sm:w-auto sm:px-6 sm:py-4 sm:text-base"
-            >
-              Book Service
-            </a>
-          </div>
-
-          <p className="mt-1 text-sm leading-relaxed text-slate-500">
-            {siteContent.business.licenseNumber} • {siteContent.business.insuredStatus} •{" "}
-            {siteContent.business.emergencyLabel}
-          </p>
-
-          <p className="rounded-2xl border border-pink-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 lg:hidden">
-            Fast response proof: cooling restored in about 15 minutes after arrival on a recent
-            emergency service call.
-          </p>
+              {item}
+            </span>
+          ))}
         </div>
 
-        <div className="hidden space-y-5 lg:block">
-          <div className="rounded-[2rem] border-2 border-pink-200 bg-[linear-gradient(145deg,rgba(255,255,255,0.98),rgba(253,242,248,0.95))] p-4 shadow-[0_24px_60px_rgba(236,72,153,0.18)] sm:p-5">
-            <div className="flex flex-wrap items-start justify-between gap-3 rounded-3xl bg-gradient-to-r from-pink-600 to-pink-500 p-4 text-white sm:p-5">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/80">
-                  Emergency Response
-                </p>
-                <p className="mt-2 max-w-xs text-xl font-semibold leading-tight sm:text-2xl">
-                  Cooling restored fast when comfort cannot wait.
-                </p>
-              </div>
-              <a
-                href={siteContent.business.phoneHref}
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-pink-600 transition hover:bg-pink-50 sm:w-auto"
-              >
-                <PhoneCall size={16} />
-                Call Anna now
-              </a>
-            </div>
-
-            <div className="mt-4 grid gap-4 md:grid-cols-[0.82fr_1.18fr]">
-              <div className="hidden overflow-hidden rounded-3xl border border-pink-200 bg-white md:block">
-                <Image
-                  src="/images/door-hanger-back.jpg"
-                  alt="Anna's Air LLC — Company owned and operated by a female veteran"
-                  width={360}
-                  height={560}
-                  className="h-full w-full object-cover"
-                  priority
-                />
-              </div>
-
-              <div className="space-y-4">
-                <div className="rounded-3xl border border-pink-200 bg-white p-5 shadow-sm">
-                  <div className="inline-flex items-center gap-2 rounded-full bg-pink-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-pink-700">
-                    <Sparkles size={14} />
-                    Fast Response Proof
-                  </div>
-                  <p className="mt-4 text-lg font-semibold leading-snug text-slate-900">
-                    “Anna got here in about 30 minutes and had us cooling again in around 15 minutes.”
-                  </p>
-                  <p className="mt-2 text-sm text-slate-600">
-                    Emergency cooling service for a local family with a newborn at home.
-                  </p>
-                  <div className="mt-4 grid grid-cols-2 gap-3">
-                    <div className="rounded-2xl bg-pink-50 px-4 py-3">
-                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-pink-600">
-                        Arrival
-                      </p>
-                      <p className="mt-1 text-xl font-bold text-slate-950">30 min</p>
-                    </div>
-                    <div className="rounded-2xl bg-pink-50 px-4 py-3">
-                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-pink-600">
-                        Cooling Back
-                      </p>
-                      <p className="mt-1 text-xl font-bold text-slate-950">15 min</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="hidden rounded-3xl border border-pink-200 bg-gradient-to-r from-pink-50 to-white p-5 sm:block">
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-pink-600">
-                    Why homeowners call now
-                  </p>
-                  <ul className="mt-3 space-y-2 text-sm font-medium text-slate-800">
-                    {siteContent.testimonialHighlights.map((item) => (
-                      <li key={item} className="flex items-start gap-2">
-                        <span className="mt-0.5 text-pink-500">✓</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
+          <a
+            href={siteContent.business.phoneHref}
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-pink-600 px-4 py-3 text-base font-bold text-white shadow-lg transition hover:bg-pink-700 hover:shadow-xl active:scale-95 sm:w-auto sm:px-7 sm:py-4"
+          >
+            <PhoneCall size={18} />
+            Call Now
+          </a>
+          <a
+            href="/contact"
+            className="inline-flex w-full items-center justify-center rounded-full border-2 border-pink-300 bg-white px-4 py-3 text-base font-semibold text-pink-700 transition hover:border-pink-400 hover:bg-pink-50 active:scale-95 sm:w-auto sm:px-7 sm:py-4"
+          >
+            Book Service
+          </a>
         </div>
+
+        <p className="mt-4 text-sm font-medium leading-relaxed text-slate-600 sm:text-base">
+          {siteContent.hero.subheadline} • {siteContent.hero.supportCopy} • {siteContent.business.licenseNumber}
+        </p>
       </div>
     </section>
   );

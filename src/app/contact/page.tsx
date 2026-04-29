@@ -37,7 +37,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href={siteContent.business.phoneHref}
-                  className="mt-2 block text-2xl font-semibold tracking-tight text-slate-950"
+                  className="mt-2 block text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl"
                 >
                   {siteContent.business.phoneDisplay}
                 </a>

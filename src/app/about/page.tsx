@@ -9,7 +9,7 @@ import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata(
   "About Anna's Air",
-  "Learn how Anna's Air brings veteran-owned discipline, female-owned leadership, and honest HVAC service to Texas homeowners.",
+  "Learn how Anna's Air brings female veteran-owned leadership and honest HVAC service to Texas homeowners.",
   "/about",
 );
 
@@ -43,42 +43,6 @@ export default function AboutPage() {
               </p>
               <p className="mt-4 rounded-xl border border-rose-100 bg-rose-50 px-3 py-2 text-sm font-medium text-rose-800">
                 {siteContent.about.firstFemaleClaim}
-              </p>
-            </article>
-          </Reveal>
-        </div>
-      </SectionShell>
-
-      <SectionShell className="bg-slate-50/70">
-        <div className="grid gap-6 md:grid-cols-2">
-          <Reveal>
-            <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold tracking-tight text-slate-950">Core Values</h2>
-              <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-                {siteContent.about.values.map((value) => (
-                  <li
-                    key={value}
-                    className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-medium text-slate-800"
-                  >
-                    {value}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          </Reveal>
-
-          <Reveal delay={0.07}>
-            <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-                Why customers trust Anna&apos;s Air
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">
-                Veteran-owned standards and female-owned, operated leadership shape every
-                service call. Homeowners choose Anna&apos;s Air for direct answers, professional
-                workmanship, and urgency when comfort cannot wait.
-              </p>
-              <p className="mt-4 text-sm text-slate-600">
-                License: {siteContent.business.licenseNumber} · {siteContent.business.insuredStatus}
               </p>
             </article>
           </Reveal>
