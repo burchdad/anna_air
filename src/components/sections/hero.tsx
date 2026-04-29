@@ -15,7 +15,7 @@ export function Hero() {
           alt="Anna's Air LLC flame and snow logo"
           width={320}
           height={320}
-          className="mx-auto h-auto w-full max-w-[230px] sm:max-w-[280px]"
+          className="mx-auto h-auto w-full max-w-[300px] sm:max-w-[380px] md:max-w-[440px]"
           priority
         />
 
@@ -34,7 +34,7 @@ export function Hero() {
           {siteContent.heroProof.map((item) => (
             <span
               key={item}
-              className="inline-flex rounded-full border border-pink-200 bg-gradient-to-r from-pink-50 to-white px-3 py-1.5 text-xs font-semibold text-pink-700 sm:text-sm"
+              className="inline-flex rounded-full border border-pink-300 bg-gradient-to-r from-pink-50 to-white px-3 py-1.5 text-xs font-semibold text-pink-700 sm:text-sm"
             >
               {item}
             </span>
@@ -57,9 +57,6 @@ export function Hero() {
           </a>
         </div>
 
-        <p className="mt-4 text-sm font-medium leading-relaxed text-slate-600 sm:text-base">
-          {siteContent.hero.subheadline} • {siteContent.hero.supportCopy} • {siteContent.business.licenseNumber}
-        </p>
       </div>
     </section>
   );

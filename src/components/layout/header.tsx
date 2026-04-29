@@ -45,16 +45,17 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-pink-100 bg-white/90 backdrop-blur">
       <div className="mx-auto w-full max-w-7xl px-4 py-2 sm:px-6 sm:py-3 md:px-12">
         <div className="flex items-center justify-between">
-          <Link href="/" className="group inline-flex items-center gap-2">
+          <Link href="/" className="group inline-flex items-center gap-1.5 sm:gap-2">
             <Image
               src="/images/Triangledot logo.png"
               alt="Triangledot logo"
-              width={489}
-              height={177}
-              className="h-8 w-auto shrink-0 sm:h-10"
+              width={645}
+              height={219}
+              className="h-auto w-[150px] shrink-0 sm:w-[200px] md:w-[240px]"
+              priority
             />
             <div>
-              <p className="text-sm font-semibold tracking-tight text-slate-950 sm:text-base">
+              <p className="text-sm font-semibold tracking-tight text-pink-700 sm:text-base">
                 {siteContent.business.name}
               </p>
               <p className="hidden text-xs font-medium text-pink-600 sm:block">Heating and Cooling</p>

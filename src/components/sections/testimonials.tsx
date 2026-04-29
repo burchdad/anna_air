@@ -25,9 +25,9 @@ export function TestimonialsSection() {
           </div>
           <Link
             href="/testimonials"
-            className="text-sm font-semibold text-pink-600 underline-offset-4 transition hover:text-pink-700 hover:underline"
+            className="inline-flex items-center gap-1 rounded-full border-2 border-pink-600 bg-pink-600 px-5 py-2.5 text-sm font-bold text-white shadow-md transition hover:bg-pink-700 hover:border-pink-700 hover:shadow-lg"
           >
-            Read testimonials
+            Read Testimonials →
           </Link>
         </div>
       </Reveal>

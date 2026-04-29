@@ -22,7 +22,7 @@ export type FAQItem = {
 
 export const siteContent = {
   business: {
-    name: "Anna's Air",
+    name: "Anna's Air LLC",
     domain: "annasair.com",
     phoneDisplay: "210-895-1122",
     phoneHref: "tel:+12108951122",
@@ -113,6 +113,7 @@ export const siteContent = {
   ] as ServiceItem[],
   pricing: {
     systemCheck: "$89.00 System Check",
+    freeEstimates: "Free Estimates Available",
   },
   testimonials: [
     {
@@ -142,7 +143,7 @@ export const siteContent = {
     mission:
       "Anna's Air exists to bring dependable comfort to Texas homes with honest guidance, responsive communication, and professional HVAC work that respects your time and budget.",
     firstFemaleClaim:
-      "First female owned and operated HVAC company",
+      "First Veteran Female Owned and Operated HVAC Company",
     story:
       "Anna started Anna's Air to deliver an honest, better service experience with a fast response time, along with reasonable and fair pricing.",
     values: ["Honesty", "Urgency", "Professionalism", "Respect"],
@@ -211,7 +212,7 @@ export const siteContent = {
     ],
   },
   heroProof: [
-    "Female Veteran Owned and Operated",
+    "First Veteran Female Owned and Operated HVAC Company",
     "Licensed and Fully Insured",
     "TACLB155020E",
   ],

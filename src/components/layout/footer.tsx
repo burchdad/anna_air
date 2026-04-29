@@ -11,9 +11,9 @@ export function Footer() {
           <Image
             src="/images/logo.png"
             alt="Anna's Air LLC"
-            width={120}
-            height={60}
-            className="h-16 w-auto"
+            width={200}
+            height={100}
+            className="h-24 w-auto sm:h-28"
           />
           <p className="max-w-md text-sm text-pink-100">
             Premium local HVAC support with urgency, honesty, and professional care for

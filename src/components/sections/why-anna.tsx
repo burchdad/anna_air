@@ -21,24 +21,10 @@ export function WhyAnnaSection() {
         </div>
       </Reveal>
 
-      <div className="mx-auto mt-8 max-w-5xl rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm sm:p-6">
-        <div className="grid gap-5 md:grid-cols-[1.1fr_0.9fr] md:items-center">
-          <Reveal>
-            <div className="space-y-3">
-              <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm">
-                Female Veteran Owned and Operated
-              </div>
-              <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm">
-                Financing Available
-              </div>
-              <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 shadow-sm">
-                Licensed and Fully Insured
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.06}>
-            <div className="mx-auto w-full max-w-[280px] overflow-hidden rounded-2xl border border-pink-200 bg-white shadow-sm">
+      <div className="mx-auto mt-8 max-w-4xl rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm sm:p-8">
+        <Reveal>
+          <div className="flex flex-col items-center gap-2 text-center">
+            <div className="mx-auto w-full max-w-[420px] overflow-hidden rounded-2xl border border-pink-200 bg-white shadow-md sm:max-w-[480px]">
               <Image
                 src="/images/Rosie the Riveter.png"
                 alt="Rosie the Riveter artwork"
@@ -47,8 +33,8 @@ export function WhyAnnaSection() {
                 className="h-auto w-full object-cover"
               />
             </div>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </div>
     </SectionShell>
   );
