@@ -23,7 +23,7 @@ export type FAQItem = {
 export const siteContent = {
   business: {
     name: "Anna's Air LLC",
-    domain: "annasair.com",
+    domain: "www.annasair.com",
     phoneDisplay: "210-895-1122",
     phoneHref: "tel:+12108951122",
     bookingHref: "/contact",

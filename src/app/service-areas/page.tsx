@@ -15,8 +15,8 @@ export const metadata: Metadata = createPageMetadata(
 );
 
 const breadcrumb = createBreadcrumbSchema([
-  { name: "Home", url: "https://annasair.com/" },
-  { name: "Service Areas", url: "https://annasair.com/service-areas" },
+  { name: "Home", url: "https://www.annasair.com/" },
+  { name: "Service Areas", url: "https://www.annasair.com/service-areas" },
 ]);
 
 export default function ServiceAreasPage() {

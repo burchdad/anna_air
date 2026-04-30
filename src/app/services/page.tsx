@@ -20,8 +20,8 @@ export const metadata: Metadata = createPageMetadata(
 );
 
 const breadcrumb = createBreadcrumbSchema([
-  { name: "Home", url: "https://annasair.com/" },
-  { name: "Services", url: "https://annasair.com/services" },
+  { name: "Home", url: "https://www.annasair.com/" },
+  { name: "Services", url: "https://www.annasair.com/services" },
 ]);
 
 export default function ServicesPage() {

@@ -5,14 +5,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/:path*",
-        has: [{ type: "host", value: "www.annasair.com" }],
-        destination: "https://annasair.com/:path*",
-        permanent: true,
-      },
-      {
-        source: "/:path*",
         has: [{ type: "host", value: "annasair.vercel.app" }],
-        destination: "https://annasair.com/:path*",
+        destination: "https://www.annasair.com/:path*",
         permanent: true,
       },
       {
