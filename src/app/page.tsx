@@ -13,7 +13,7 @@ import { TrustBar } from "@/components/sections/trust-bar";
 import { WhyAnnaSection } from "@/components/sections/why-anna";
 import { LocalBusinessSchema } from "@/components/seo/local-business-schema";
 import { SchemaScript } from "@/components/seo/schema-script";
-import { createFaqSchema, createPageMetadata } from "@/lib/seo";
+import { createFaqSchema, createPageMetadata, createWebSiteSchema } from "@/lib/seo";
 import { siteContent } from "@/content/site";
 
 export const metadata: Metadata = createPageMetadata(
@@ -27,6 +27,7 @@ export default function Home() {
   return (
     <>
       <LocalBusinessSchema />
+      <SchemaScript schema={createWebSiteSchema()} />
       <SchemaScript schema={createFaqSchema(siteContent.faq)} />
       <Hero />
       <TrustBar />

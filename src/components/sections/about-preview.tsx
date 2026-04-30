@@ -25,7 +25,7 @@ export function AboutPreview() {
                 {siteContent.about.firstFemaleClaim}
               </div>
               <Link
-                href="/about"
+                href="/about-us"
                 className="inline-flex rounded-full border border-pink-300 bg-white px-5 py-2.5 text-sm font-semibold text-pink-700 transition hover:bg-pink-50"
               >
                 Read the story

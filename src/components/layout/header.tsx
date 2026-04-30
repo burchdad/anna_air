@@ -37,7 +37,7 @@ export function Header() {
   const mobileLinks = [
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
-    { label: "About", href: "/about" },
+    { label: "About", href: "/about-us" },
     { label: "Contact", href: "/contact" },
   ];
 

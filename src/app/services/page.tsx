@@ -5,7 +5,12 @@ import { FaqSection } from "@/components/sections/faq";
 import { PageHero } from "@/components/sections/page-hero";
 import { ServicesGrid } from "@/components/sections/services-grid";
 import { SchemaScript } from "@/components/seo/schema-script";
-import { createBreadcrumbSchema, createFaqSchema, createPageMetadata } from "@/lib/seo";
+import {
+  createBreadcrumbSchema,
+  createFaqSchema,
+  createPageMetadata,
+  createServiceListSchema,
+} from "@/lib/seo";
 import { siteContent } from "@/content/site";
 
 export const metadata: Metadata = createPageMetadata(
@@ -23,6 +28,7 @@ export default function ServicesPage() {
   return (
     <>
       <SchemaScript schema={breadcrumb} />
+      <SchemaScript schema={createServiceListSchema()} />
       <SchemaScript schema={createFaqSchema(siteContent.faq)} />
       <PageHero
         eyebrow="Services"

@@ -3,12 +3,24 @@ import type { Metadata } from "next";
 import { siteContent } from "@/content/site";
 
 const baseUrl = `https://${siteContent.business.domain}`;
+const defaultKeywords = [
+  "San Antonio HVAC",
+  "AC repair San Antonio",
+  "HVAC service",
+  "Emergency HVAC",
+  "Air conditioning repair",
+  "HVAC installation",
+  "Ductwork service",
+  "Hill Country HVAC",
+  "female veteran owned HVAC",
+  "Anna's Air",
+];
 
 export function createPageMetadata(
   title: string,
   description: string,
   path = "/",
-  options?: { absolute?: boolean },
+  options?: { absolute?: boolean; keywords?: string[] },
 ): Metadata {
   const url = `${baseUrl}${path}`;
   const resolvedTitle = options?.absolute ? ({ absolute: title } as const) : title;
@@ -16,6 +28,8 @@ export function createPageMetadata(
   return {
     title: resolvedTitle,
     description,
+    keywords: options?.keywords ?? defaultKeywords,
+    category: "Home Services",
     alternates: {
       canonical: url,
     },
@@ -105,6 +119,45 @@ export function createLocalBusinessSchema() {
     },
     knowsAbout: ["HVAC", "Air Conditioning", "Heating Systems", "Ductwork", "Emergency HVAC Service"],
     award: siteContent.business.ownershipBadges,
+  };
+}
+
+export function createWebSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteContent.business.name,
+    url: baseUrl,
+    inLanguage: "en-US",
+    publisher: {
+      "@type": "Organization",
+      name: siteContent.business.name,
+      url: baseUrl,
+      logo: `${baseUrl}${siteContent.seo.ogImage}`,
+    },
+  };
+}
+
+export function createServiceListSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "HVAC Services",
+    itemListElement: siteContent.services.map((service, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Service",
+        name: service.title,
+        description: service.description,
+        areaServed: "San Antonio and Texas Hill Country",
+        provider: {
+          "@type": "HVACBusiness",
+          name: siteContent.business.name,
+          url: baseUrl,
+        },
+      },
+    })),
   };
 }
 
