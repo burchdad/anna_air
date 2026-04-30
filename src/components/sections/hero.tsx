@@ -22,9 +22,9 @@ export function Hero() {
         </div>
 
         <div className="mt-4 space-y-1 sm:space-y-2">
-          <p className="text-balance text-3xl font-extrabold tracking-tight text-pink-700 sm:text-4xl md:text-5xl">
+          <h1 className="text-balance text-3xl font-extrabold tracking-tight text-pink-700 sm:text-4xl md:text-5xl">
             She Believed She Could So She Did
-          </p>
+          </h1>
           <p className="text-balance text-xl font-extrabold tracking-tight text-pink-700 sm:text-2xl md:text-3xl">
             Business Phone (210) 895 - 1122
           </p>
