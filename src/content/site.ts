@@ -51,7 +51,7 @@ export const siteContent = {
   },
   navigation: [
     { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
+    { label: "About", href: "/about-us" },
     { label: "Services", href: "/services" },
     { label: "Service Areas", href: "/service-areas" },
     { label: "Testimonials", href: "/testimonials" },

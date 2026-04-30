@@ -11,12 +11,12 @@ import { createBreadcrumbSchema, createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata(
   "About | Female Veteran-Owned HVAC Company in San Antonio, TX",
   "Anna's Air is a female veteran-owned HVAC company serving San Antonio and the Texas Hill Country with honest diagnostics, fast response, and transparent pricing.",
-  "/about",
+  "/about-us",
 );
 
 const breadcrumb = createBreadcrumbSchema([
   { name: "Home", url: "https://annasair.com/" },
-  { name: "About", url: "https://annasair.com/about" },
+  { name: "About", url: "https://annasair.com/about-us" },
 ]);
 
 export default function AboutPage() {
