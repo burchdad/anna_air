@@ -67,17 +67,6 @@ export default function ContactPage() {
                 <p>{siteContent.business.emergencyLabel}</p>
               </div>
 
-              <div className="rounded-2xl border border-pink-200 bg-pink-50 p-4 text-sm text-slate-700">
-                <p className="font-semibold text-slate-900">Lead routing and follow-up</p>
-                <p className="mt-2">
-                  Form submissions include page source and campaign details so your team can track which
-                  channels are driving calls.
-                </p>
-                <p className="mt-2 text-xs text-slate-600">
-                  To connect a CRM, set <code>LEADS_WEBHOOK_URL</code> in your environment and the
-                  API route will forward every request payload automatically.
-                </p>
-              </div>
             </aside>
           </Reveal>
         </div>
