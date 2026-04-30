@@ -29,6 +29,20 @@ export const metadata: Metadata = {
     title: siteContent.seo.defaultTitle,
     description: siteContent.seo.defaultDescription,
     siteName: siteContent.business.name,
+    locale: "en_US",
+    images: [
+      {
+        url: siteContent.seo.ogImage,
+        width: 1200,
+        height: 630,
+        alt: `${siteContent.business.name} Heating and Cooling Service`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteContent.seo.defaultTitle,
+    description: siteContent.seo.defaultDescription,
     images: [siteContent.seo.ogImage],
   },
 };

@@ -5,17 +5,24 @@ import { PageHero } from "@/components/sections/page-hero";
 import { Reveal } from "@/components/sections/reveal";
 import { SectionShell } from "@/components/sections/section-shell";
 import { siteContent } from "@/content/site";
-import { createPageMetadata } from "@/lib/seo";
+import { SchemaScript } from "@/components/seo/schema-script";
+import { createBreadcrumbSchema, createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata(
-  "About Anna's Air",
-  "Learn how Anna's Air brings female veteran-owned leadership and honest HVAC service to Texas homeowners.",
+  "About | Female Veteran-Owned HVAC Company in San Antonio, TX",
+  "Anna's Air is a female veteran-owned HVAC company serving San Antonio and the Texas Hill Country with honest diagnostics, fast response, and transparent pricing.",
   "/about",
 );
+
+const breadcrumb = createBreadcrumbSchema([
+  { name: "Home", url: "https://annasair.com/" },
+  { name: "About", url: "https://annasair.com/about" },
+]);
 
 export default function AboutPage() {
   return (
     <>
+      <SchemaScript schema={breadcrumb} />
       <PageHero
         eyebrow="About"
         title="A Better HVAC Experience, Built on Trust"

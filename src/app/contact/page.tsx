@@ -6,17 +6,24 @@ import { PageHero } from "@/components/sections/page-hero";
 import { Reveal } from "@/components/sections/reveal";
 import { SectionShell } from "@/components/sections/section-shell";
 import { siteContent } from "@/content/site";
-import { createPageMetadata } from "@/lib/seo";
+import { SchemaScript } from "@/components/seo/schema-script";
+import { createBreadcrumbSchema, createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata(
-  "Contact and Book Appointment",
-  "Call Anna's Air or request service online for HVAC repair, maintenance, installation, and emergency support in San Antonio and the Hill Country.",
+  "Request HVAC Service | San Antonio, TX",
+  "Request HVAC service, schedule a system check, or call Anna's Air for emergency cooling help in San Antonio and the Texas Hill Country. Call 210-895-1122 for immediate support.",
   "/contact",
 );
+
+const breadcrumb = createBreadcrumbSchema([
+  { name: "Home", url: "https://annasair.com/" },
+  { name: "Contact", url: "https://annasair.com/contact" },
+]);
 
 export default function ContactPage() {
   return (
     <>
+      <SchemaScript schema={breadcrumb} />
       <PageHero
         eyebrow="Contact"
         title="Book Service or Call for Immediate Help"

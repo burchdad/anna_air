@@ -12,18 +12,22 @@ import { TestimonialsSection } from "@/components/sections/testimonials";
 import { TrustBar } from "@/components/sections/trust-bar";
 import { WhyAnnaSection } from "@/components/sections/why-anna";
 import { LocalBusinessSchema } from "@/components/seo/local-business-schema";
-import { createPageMetadata } from "@/lib/seo";
+import { SchemaScript } from "@/components/seo/schema-script";
+import { createFaqSchema, createPageMetadata } from "@/lib/seo";
+import { siteContent } from "@/content/site";
 
 export const metadata: Metadata = createPageMetadata(
-  "Anna's Air | San Antonio HVAC Service",
-  "Fast, honest HVAC service for San Antonio and Hill Country homeowners from a female veteran-owned company focused on emergency response and clear communication.",
+  "Anna's Air | San Antonio HVAC Repair & AC Service",
+  "Female veteran-owned HVAC company serving San Antonio, Boerne, Helotes and the Texas Hill Country. Same-day AC repair, system checks, emergency service and complete installations. Licensed TACLB155020E.",
   "/",
+  { absolute: true },
 );
 
 export default function Home() {
   return (
     <>
       <LocalBusinessSchema />
+      <SchemaScript schema={createFaqSchema(siteContent.faq)} />
       <Hero />
       <TrustBar />
       <WhyAnnaSection />

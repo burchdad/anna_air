@@ -5,17 +5,24 @@ import { PageHero } from "@/components/sections/page-hero";
 import { Reveal } from "@/components/sections/reveal";
 import { SectionShell } from "@/components/sections/section-shell";
 import { siteContent } from "@/content/site";
-import { createPageMetadata } from "@/lib/seo";
+import { SchemaScript } from "@/components/seo/schema-script";
+import { createBreadcrumbSchema, createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata(
-  "Testimonials",
-  "Read authentic homeowner feedback about response time, fair pricing, and comfort improvements from Anna's Air.",
+  "Customer Reviews | San Antonio HVAC Service",
+  "Read what San Antonio and Hill Country homeowners say about Anna's Air — fast response times, honest pricing, and real cooling restoration when it matters most.",
   "/testimonials",
 );
+
+const breadcrumb = createBreadcrumbSchema([
+  { name: "Home", url: "https://annasair.com/" },
+  { name: "Testimonials", url: "https://annasair.com/testimonials" },
+]);
 
 export default function TestimonialsPage() {
   return (
     <>
+      <SchemaScript schema={breadcrumb} />
       <PageHero
         eyebrow="Testimonials"
         title="Homeowner Feedback Built on Real Service Moments"
