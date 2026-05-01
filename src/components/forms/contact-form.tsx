@@ -54,7 +54,7 @@ const initialAttribution: AttributionState = {
   msclkid: "",
 };
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mqenaaqj";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mpqbwqre";
 
 function getAttributionFromBrowser(): AttributionState {
   if (typeof window === "undefined") {
