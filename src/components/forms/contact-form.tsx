@@ -54,6 +54,8 @@ const initialAttribution: AttributionState = {
   msclkid: "",
 };
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mqenaaqj";
+
 function getAttributionFromBrowser(): AttributionState {
   if (typeof window === "undefined") {
     return initialAttribution;
@@ -125,15 +127,28 @@ export function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/leads", {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({
-          ...state,
-          submittedAt: new Date().toISOString(),
-          attribution,
+          name: state.name,
+          phone: state.phone,
+          email: state.email,
+          service: state.service,
+          message: state.message,
+          urgency: state.urgencyWindow,
+          preferred_contact: state.preferredContact,
+          sms_opt_in: state.smsOptIn ? "Yes" : "No",
+          emergency: state.isEmergency ? "YES - EMERGENCY" : "No",
+          submitted_at: new Date().toISOString(),
+          utm_source: attribution.utmSource,
+          utm_medium: attribution.utmMedium,
+          utm_campaign: attribution.utmCampaign,
+          gclid: attribution.gclid,
+          fbclid: attribution.fbclid,
         }),
       });
 
@@ -151,7 +166,12 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-4 rounded-3xl border border-pink-200 bg-white p-6 shadow-sm sm:p-7">
+    <form
+      onSubmit={onSubmit}
+      action={FORMSPREE_ENDPOINT}
+      method="POST"
+      className="space-y-4 rounded-3xl border border-pink-200 bg-white p-6 shadow-sm sm:p-7"
+    >
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="space-y-1.5 text-sm">
           <span className="font-medium text-slate-800">Full Name</span>
